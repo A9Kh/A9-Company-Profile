@@ -27,6 +27,13 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      primary: {
+        100: "#7acd7d",
+        200: "#4ebc52",
+        300: "#22ab27",
+        400: "#1b891f",
+        500: "#18781b",
+      }
     },
     spacing: {
       px: '1px',
@@ -268,6 +275,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      poppins: ["Poppins"],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

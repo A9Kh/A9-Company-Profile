@@ -1,5 +1,7 @@
-import Navbar from "components/Navbar";
-import Footer from 'components/Footer';
+// import Navbar from "components/Navbar";
+import Navbar2 from "components/Navbar2";
+// import Footer from 'components/Footer';
+import Footer2 from 'components/Footer2';
 import {
   BrowserRouter as Router,
   Switch,
@@ -45,7 +47,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen overflow-hidden">
-        < Navbar />
+        < Navbar2 />
 
         <Fragment>
           <ScrollToTop />
@@ -62,7 +64,7 @@ function App() {
           </Switch>
         </Fragment>
 
-        <Footer />
+        <Footer2 />
       </div >
     </Router>
   );
