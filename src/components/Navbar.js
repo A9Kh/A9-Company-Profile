@@ -10,16 +10,13 @@ import { CgMenuLeftAlt } from "react-icons/cg";
 import { MdClose, MdLanguage } from "react-icons/md";
 
 // Logo
-import logo from "assets/logo_white.svg";
-import logo_only from "assets/logo_only_white.svg";
 
 let navigation = [
-    { name: 'home', to: '/' },
-    { name: 'services', to: '/services' },
-    { name: 'clients', to: '/clients' },
-    { name: 'projects', to: '/projects' },
-    { name: 'aboutus', to: '/aboutus' },
-    { name: 'contactus', to: '/contactus' },
+    { name: 'About Us', to: '/' },
+    { name: 'What We Do', to: '/whatwedo' },
+    { name: 'Careers', to: '/careers' },
+    { name: 'Investor Resources', to: '/investorresources' },
+    { name: 'Contact Us', to: '/contactus' },
 ];
 
 const langues = [
@@ -75,8 +72,8 @@ const MyNavbar = () => {
                     </button>
 
                     <Link to="/" className="text-lg font-semibold tracking-widest uppercase rounded-lg">
-                        <img className="object-cover w-8 h-auto lg:hidden" src={logo_only} alt="logo" />
-                        <img className="object-cover w-20 h-auto hidden lg:block" src={logo} alt="logo" />
+                        <img className="object-cover w-8 h-auto lg:hidden" src="" alt="logo" />
+                        <img className="object-cover w-20 h-auto hidden lg:block" src="" alt="logo" />
                     </Link>
 
                     <MdLanguage onClick={() => setMenu(!menu)} className="lg:hidden h-6 w-6 text-white hover:text-gray-400" />

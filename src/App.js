@@ -11,12 +11,11 @@ import AOS from "aos"
 import "aos/dist/aos.css";
 
 //Pages
-import Home from "views/home";
-import ServicesPage from "views/services";
-import ClientPage from "views/clients";
-import ProjectsPage from "views/projects";
-import AboutPage from "views/aboutus";
-import ContactPage from "views/contactus";
+import AboutUsPage from "views/aboutus";
+import WhatWeDoPage from "views/whatwedo";
+import CareersPage from "views/careers";
+import InvestorResourcesPage from "views/investorresources";
+import ContactUsPage from "views/contactus";
 import ErrorPage from "views/404";
 
 function App() {
@@ -54,12 +53,11 @@ function App() {
           {scroll && <button className="rounded-full active:bg-gray-300 hover:bg-gray-400 z-10 w-12 h-12 fixed m-4 md:m-8 bottom-0 right-0 text-xl" onClick={handleScroll}>☝️</button>}
 
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/services" component={ServicesPage} />
-            <Route exact path="/clients" component={ClientPage} />
-            <Route exact path="/projects" component={ProjectsPage} />
-            <Route exact path="/aboutus" component={AboutPage} />
-            <Route exact path="/contactus" component={ContactPage} />
+            <Route exact path="/" component={AboutUsPage} />
+            <Route exact path="/whatwedo" component={WhatWeDoPage} />
+            <Route exact path="/careers" component={CareersPage} />
+            <Route exact path="/investorresources" component={InvestorResourcesPage} />
+            <Route exact path="/contactus" component={ContactUsPage} />
             <Route path='*' exact={true} component={ErrorPage} />
           </Switch>
         </Fragment>

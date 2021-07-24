@@ -1,29 +1,11 @@
 import React from 'react';
-import AboutCompany from "components/aboutus/AboutCompany"
-import AboutTeam from "components/aboutus/AboutTeam"
-import AboutWhyChooseUs from 'components/aboutus/AboutWhyChooseUs';
-import Cover from "components/aboutus/Cover"
 
 const AboutPage = () => {
-    document.title = "K-DATA - About Us";
+    document.title = "A9 - About Us";
 
     return (
-        <main>
-            <section>
-                <Cover />
-            </section>
-
-            <section className="container mx-auto max-w-7xl">
-                <AboutCompany />
-            </section>
-
-            <section className="container mx-auto max-w-7xl">
-                <AboutTeam />
-            </section>
-
-            <section className="container mx-auto max-w-7xl">
-                <AboutWhyChooseUs />
-            </section>
+        <main className="h-screen">
+            <h1 className="mt-20 text-9xl">aboutus</h1>
         </main>
     )
 }

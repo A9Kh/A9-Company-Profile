@@ -1,4 +1,3 @@
-import Logo from "../assets/logo_only_white.svg";
 import { FaEnvelope, FaFacebookSquare, FaGithub, FaGoogle, FaLandmark, FaPhone } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -32,7 +31,7 @@ const Footer = () => {
                             <polygon points="107.67 46.53 108.39 47.24 102.79 41.64 107 45.86 107.67 46.53" />
                             <polygon points="107.67 47.95 107 48.62 102.79 52.84 108.39 47.24 107.67 47.95" />
                         </svg> */}
-                        <img className="mb-4 p-2 w-20 h-auto md:w-16" src={Logo} alt=" logo" />
+                        <img className="mb-4 p-2 w-20 h-auto md:w-16" src="" alt=" logo" />
 
                         <div className="mt-2"> {t("inquiry")} </div>
                         <div className="mb-2"> info@kdata.com </div>
