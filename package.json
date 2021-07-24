@@ -1,0 +1,62 @@
+{
+  "name": "profile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run watch:css && react-scripts start",
+    "serve": "craco start",
+    "dev": "npm run watch:css && react-scripts start",
+    "build": "npm run watch:css && react-scripts build",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@craco/craco": "^6.2.0",
+    "@steveeeie/react-page-transition": "^1.2.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
+    "i18next": "^20.3.2",
+    "node-mandrill": "^1.0.1",
+    "postcss-cli": "^8.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-flagkit": "^2.0.4",
+    "react-i18next": "^11.11.1",
+    "react-icons": "^4.2.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.2",
+    "styled-components": "^5.3.0",
+    "universal-cookie": "^4.0.4",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
+  }
+}
