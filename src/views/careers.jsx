@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ServicesPage = () => {
+const CareersPage = () => {
     document.title = "A9 - Careers";
 
     return (
@@ -10,4 +10,4 @@ const ServicesPage = () => {
     )
 }
 
-export default ServicesPage;
+export default CareersPage;

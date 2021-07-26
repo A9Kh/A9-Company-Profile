@@ -24,13 +24,19 @@ const Navbar2 = () => {
                     <a href=""><FaYoutube className="text-3xl ml-5 text-primary-300" /></a>
                 </div>
             </div>
-            <div className="bg-primary-300">
-                <div className="container mx-auto flex justify-evenly">
-                    {links.map((link, k) => (
-                        <Link key={k} to={link.to} className={`text-white text-2xl font-bold p-6 hover:bg-primary-200 active:bg-primary-400 ${link.to === location.pathname ? "bg-primary-400" : ""}`}>{link.name}</Link>
-                    ))}
+
+            {/* Desktop navbar */}
+            <div className="hidden lg:block">
+                <div className="bg-primary-300">
+                    <div className="container mx-auto flex justify-evenly">
+                        {links.map((link, k) => (
+                            <Link key={k} to={link.to} className={`text-white text-xl font-bold p-4 hover:bg-primary-200 active:bg-primary-400 ${link.to === location.pathname ? "bg-primary-400" : ""}`}>{link.name}</Link>
+                        ))}
+                    </div>
                 </div>
             </div>
+
+            {/* Mobile navbar */}
         </nav>
     )
 }
