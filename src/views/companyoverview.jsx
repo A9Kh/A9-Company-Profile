@@ -1,13 +1,11 @@
-import React from 'react';
-
+import React from "react";
+import companyoverview from "components/companyoverview/companyoverview";
 const CompanyPage = () => {
-    document.title = "A9 - What We Do";
+  return (
+    <>
+      <companyoverview />
+    </>
+  );
+};
 
-    return (
-        <main className="h-screen">
-            <h1 className="mt-20 text-9xl">company Overview</h1>
-        </main>
-    )
-}
-
-export default CompanyPage;
+export default companyoverview;

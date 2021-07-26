@@ -1,13 +1,14 @@
-import React from 'react';
+import React from "react";
+import contactus from "components/contactus/contactus";
 
-const ContactPage = () => {
-    document.title = "A9 - Contact Us";
+const contactusPage = () => {
+  document.title = "A9 - Contact Us";
 
-    return (
-        <main className="h-screen">
-            <h1 className="mt-20 text-9xl">contactus</h1>
-        </main>
-    )
-}
+  return (
+    <>
+      <contactus />
+    </>
+  );
+};
 
-export default ContactPage;
+export default contactus;
