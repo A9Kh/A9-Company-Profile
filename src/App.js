@@ -11,9 +11,11 @@ import { Fragment, useState, useEffect } from "react";
 import ScrollToTop from "components/Scroll2Top";
 import AOS from "aos"
 import "aos/dist/aos.css";
+import { RiArrowUpSLine } from "react-icons/ri"
 
 //Pages
-import AboutUsPage from "views/aboutus";
+import CompanyPage from "views/companyoverview";
+import AboutA9Page from "views/abouta9mall";
 import WhatWeDoPage from "views/whatwedo";
 import CareersPage from "views/careers";
 import InvestorResourcesPage from "views/investorresources";
@@ -52,10 +54,13 @@ function App() {
         <Fragment>
           <ScrollToTop />
 
-          {scroll && <button className="rounded-full active:bg-gray-300 hover:bg-gray-400 z-10 w-12 h-12 fixed m-4 md:m-8 bottom-0 right-0 text-xl" onClick={handleScroll}>☝️</button>}
+          {scroll && <button className="rounded-full bg-black bg-opacity-30 active:bg-gray-300 hover:bg-gray-400 z-10 w-12 h-12 fixed m-4 md:m-8 bottom-0 right-0" onClick={handleScroll}>
+            <RiArrowUpSLine className="text-5xl text-white w-full text-center" />
+          </button>}
 
           <Switch>
-            <Route exact path="/" component={AboutUsPage} />
+            <Route exact path="/" component={CompanyPage} />
+            <Route exact path="/abouta9" component={AboutA9Page} />
             <Route exact path="/whatwedo" component={WhatWeDoPage} />
             <Route exact path="/careers" component={CareersPage} />
             <Route exact path="/investorresources" component={InvestorResourcesPage} />
