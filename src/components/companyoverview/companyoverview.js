@@ -41,27 +41,31 @@ export const companyoverview = () => {
       </div>
       <hr className=" xl:w-6/12 " />
 
-      <div className="flex h-full bg-primary-300 rounded overflow-hidden shadow-lg my-20 ml-20">
-        <div className="md:flex">
-          <div className="w-full md:w-6/12 rounded-t">
-            <img src={shop} alt="" className="h-full w-full shadow object-cover" />
+      <div className="h-3/5 w-auto bg-primary-300 rounded overflow-hidden shadow-lg my-20 lg:mx-20 mx-8">
+        <div className="md:flex flex-wrap">
+          <div className="flex-1 w-full rounded-t">
+            <img
+              src={shop}
+              alt=""
+              className="h-full w-full shadow object-cover"
+            />
           </div>
-          <div className="w-full md:w-5/12 rounded-t m-36 -mt-4 -ml-4 pt-10 pl-20">
-            <h1 className="uppercase tracking-wide text-4xl text-white font-bold pt-10 px-24 pb-10">
+          <div className="flex-1 w-full rounded-t pt-10 lg:pb-20 pb-12 lg:px-12 lg:text-left text-jutify">
+            <h1 className="uppercase tracking-wide lg:text-4xl text-2xl text-white font-bold pt-10 lg:px-20 pb-10 lg:mx-auto   mx-8">
               suppercharge <br /> your business
             </h1>
-            <p className="text-white ml-24 pt-4 text-3xl md:text-xl sm: text-sm pb-4">
+            <p className="text-white lg:ml-20 mx-8 pt-4 lg:text-2xl text-lg pb-4 mx-8">
               With A9, any business can scale and become <br /> a super
               eBusiness. Let our digital capabilities enable <br /> your
               ambitions as you grow in the region. Find out more about how you
               can grow your business with A9.
             </p>
-            <ul className="grid grid-cols-3 text-white ml-24 pt-4 text-2xl">
+            <ul className="grid grid-cols-3 text-white lg:ml-20 pt-4 lg:text-2xl text-lg mx-8">
               <li>Cambodia</li>
               <li>Thailand</li>
               <li>Thailand</li>
             </ul>
-            <ul className="grid grid-cols-3 text-white ml-24 pt-4 text-2xl">
+            <ul className="grid grid-cols-3 text-white lg:ml-20 pt-4 lg:text-2xl text-lg mx-8">
               <li>China</li>
               <li>Singapore</li>
               <li>Singapore</li>
@@ -69,8 +73,8 @@ export const companyoverview = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 ml-20 mb-20">
-        <div className="my-10 items-center">
+      <div className="flex lg:flex-row flex-col-reverse lg:ml-20 mx-8 mb-20">
+        <div className="w-full my-10 items-center">
           <h1 className="text-4xl font-bold mb-10">Express Delivery</h1>
           <h1 className="text-2xl font-bold mb-10">7 big Benefits:</h1>
           <ul className="text-xl  items-center">
@@ -102,7 +106,7 @@ export const companyoverview = () => {
             </li>
           </ul>
         </div>
-        <div className="h-full w-full flex items-center justify-center">
+        <div className="h-full w-full ">
           <img src={delivery} alt="" />
         </div>
       </div>

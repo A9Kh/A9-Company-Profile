@@ -5,7 +5,7 @@ const AboutA9Mall = () => {
         <div>
             <h1 className="font-bold text-lg mb-1 sm:text-xl sm:mb-3 lg:text-2xl lg:mb-5 px-3 sm:px-5 lg:px-1">About A9 Mall</h1>
             <article className="mb-10 px-3 sm:px-5 lg:px-1">
-                <p className="font-medium text-sm lg:text-base">
+                <p className="text-sm lg:text-base">
                     Founded in 2012, A9 Group is Southeast Asia’s leading eCommerce platform. With a presence in six countries – Indonesia, Malaysia,
                     the Philippines, Singapore, Thailand and Vietnam. we connect this vast and diverse region through our technology, logistics and payments
                     capabilities. Today, we have the largest selection of brands and sellers, and by 2030, we aim to serve 300 million customers. In 2016, A9 Mall

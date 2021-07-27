@@ -30,6 +30,13 @@ const en_lang = {
         // explore_more: "Explore More",
         // error_message: "The page you are looking for does not exist",
         // back_home: "Go back Home",
+
+        //Navbar
+        aboutus: "About Us 123",
+        whatwedo: "What We Do",
+        careers: "Careers",
+        investorresources: "Investor Resources",
+        contactus: "Contact Us",
     }
 };
 
