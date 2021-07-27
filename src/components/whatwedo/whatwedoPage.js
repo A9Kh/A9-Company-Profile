@@ -95,7 +95,7 @@ export const whatwedoPage = () => {
               <img className="h-full w-auto" src={photos2} />
             </div>
             <div className=" h-full lg:w-1/3 w-full lg:pb-20 py-4 lg:pr-12 mx-4">
-              <ul className=" lg:list-outside list-inside my-4 text-2xl font-semibold lg:text-left text-justify items-center">
+              <ul className=" lg:list-outside list-inside my-4 text-2xl font-semibold">
                 <li>
                   - A9 sold products will be delivered directly from the
                   warehouse closest to you, on normal condition after your

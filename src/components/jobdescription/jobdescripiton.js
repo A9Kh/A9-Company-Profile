@@ -1,3 +1,5 @@
+
+
 export const jobdescription = () => {
   return (
     <div className="container mx-auto">
@@ -59,70 +61,82 @@ export const jobdescription = () => {
         </ul>
       </div>
       <div className="flex flew-wrap flex-col jutify-center w-full text-gray-700 bg-gray-100 rounded-lg shadow-md tracking-wide subpixel-antialiased lg:mb-32 mb-12">
+          <h1 className = "ml-96 pt-10  font-bold text-5xl text-black ">Application Form</h1>
         <form>
-          <div>
-            <div className = "container mx-auto">
-              <label htmlFor="FirstName">Firs Name</label>
-              <input type="text" />
+            <div className = "px-72 py-10">
+            <div>
+              <label htmlFor="FirstName" className = "text-2xl px-0 py-4">Firs Name</label>
+              <input type="text" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4"/>
             </div>
             <div>
-              <label htmlFor="LastName">Last Name</label>
-              <input type="text" />
+              <label htmlFor="LastName"className = "text-2xl px-0 py-4">Last Name</label>
+              <input type="text" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4"/>
             </div>
             <div>
-              <label htmlFor="Email">Email</label>
+              <label htmlFor="Email"className = "text-2xl px-0 py-4">Email</label>
+              <input type="text" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4" />
             </div>
-            <div>
-              <label htmlFor="CountryCode">Country Code</label>
-              <select name="countrycode" id="countrycode">
+            <div className = "grid grid-cols-2">
+            <div className = "mr-10">
+              <label htmlFor="CountryCode" className = "text-2xl px-0 py-4">Country Code</label>
+              <select name="countrycode" id="countrycode" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4">
                 <option value="Select">Select</option>
                 <option value="885">855</option>
                 <option value="884">884</option>
                 <option value="93">93</option>
               </select>
-              <label htmlFor="Phone Number">Phone Number</label>
-              <input type="text" />
+            </div>
+            <div className = "ml-10">
+            <label htmlFor="Phone Number" className = "text-2xl px-0 py-4 ">Phone Number</label>
+              <input type="text"className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4" />
+            </div>
             </div>
             <div>
-                <label htmlFor="CurrentLocation">Current Location</label>
-                <select name="country" id="country">
+                <label htmlFor="CurrentLocation"  className = "text-2xl px-0 py-4">Current Location</label>
+                <select name="country" id="country" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4">
                     <option value="Cambodia">Cambodia</option>
                     <option value="Thailand">Thailand</option>
                     <option value="Chineses">Chineses</option>
                 </select>
-                <select name="state" id="state">
+                <select name="state" id="state" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4" >
                     <option value="Phnom Penh">Phnom Penh</option>
                     <option value="Bangkok">Bangkok</option>
                     <option value="Pekang">Pekang</option>
                 </select>
             </div>
             <div>
-                <label htmlFor="Education">Education</label>
-                <select name="education" id="education">
+                <label htmlFor="Education" className = "text-2xl px-0 py-4">Education</label>
+                <select name="education" id="education"  className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4">
                     <option value="BanchalerDegree">Banchaler Degree</option>
                     <option value="Master">Master</option>
                     <option value="PHD">PHD</option>
                 </select>
             </div>
-            <div>
-                <label htmlFor="A9 Mall">Why are you applying to A9 Mall</label>
-                <textarea name="A9 Mall" id="A9 Mall" cols="20" rows="10"></textarea>
+            <div className = "mt-4">
+                <label htmlFor="A9 Mall" className = "text-2xl px-0 py-4" >Why are you applying to A9 Mall?</label>
+                <textarea name="A9 Mall" id="A9 Mall"  rows="5" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4"></textarea>
+            </div>
+            <div className = "mt-4 mb-4">
+                <label htmlFor="UploadResume" className = "text-2xl px-0 py-4 uppercase font-bold">Upload Resume</label>
+                <input type="text" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4"/>
+                <span className = "text-xl px-4 py-4 mt-4">Only supports docx, jpg, pdf, jpeg, png. File size maximum 5MB. File Name maximum 300 characters.</span>
             </div>
             <div>
-                <label htmlFor="UploadResume">Upload Resume</label>
-                <input type="file" />
-                <span>Only supports docx, jpg, pdf, jpeg, png. File size maximum 5MB. File Name maximum 300 characters.</span>
+                <label htmlFor="UploadAddionalDocument" className = "text-2xl px-0 py-4 uppercase font-bold ">Upload Additional Document</label>
+                <input type="text" className = "w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4"/>
+                <span className = "text-xl">Only supports docx, jpg, pdf, jpeg, png. File size maximum 5MB. File Name maximum 300 characters.</span>
+               
             </div>
-            <div>
-                <label htmlFor="UploadAddionalDocument">Upload Additional Document</label>
-                <input type="file" />
-                Only supports docx, jpg, pdf, jpeg, png. File size maximum 5MB. File Name maximum 300 characters.
+            <div className = "mt-1 mt-8 mb-8">
+              <label className = "inline-flex items-center">
+                <input type="checkbox" className = "form-checkbox h-8 w-8 checked border border-black" />
+                <span className = "ml-2 text-2xl">I have read and understood</span>
+              </label>
             </div>
-            <div>
-                <input type="checkbox" />
-                <label htmlFor="Ihavereadandunderstood">I have read and understood</label>
+            <div className = "ml-96">
+                <button className = "bg-primary-300 text-2xl  text-white font-simibold hover:text-white white py-4 px-24 border border-blue hover: border-primary-300 rounded-full ">Apply</button>
             </div>
-          </div>
+            </div>
         </form>
       </div>
     </div>
