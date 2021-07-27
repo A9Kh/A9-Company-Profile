@@ -1,11 +1,12 @@
 import React from 'react';
+import jobdescription from 'components/jobdescription/jobdescripiton';
 
-const jobdescription = () => {
+const jobdescriptionPage = () => {
     document.title = "A9 - What We Do";
 
     return (
         <main className="h-screen">
-            <h1 className="mt-20 text-9xl">job description</h1>
+            <jobdescription/>
         </main>
     )
 }

@@ -5,7 +5,7 @@ import icon3 from "assets/images/youtube.svg";
 import icon4 from "assets/images/contact.svg";
 export const contactusPage = () => {
   return (
-    <div className="block">
+    <div className="container mx-auto">
       <div className="flex flex-wrap lg:flex-row flex-col-reverse flex-between">
         <div className="lg:w-1/4 lg:ml-16 lg:my-20 lg:text-left text-center">
           <div className="text-2xl font-bold mb-4">

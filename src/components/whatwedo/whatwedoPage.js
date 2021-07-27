@@ -9,7 +9,7 @@ export const whatwedoPage = () => {
   //const photos = require("assets/images/pic-1.jpg"); // with require
   return (
     //introduction
-    <div className="flex flex-col justify-center">
+    <div className="container mx-auto ">
       <div className="text-gray-700 font-sans subpixel-antialiased tracking-wide">
         <h1 className="mt-16 lg:ml-16 mx-4 text-3xl font-bold text-gray-900">
           What We Do
@@ -95,7 +95,7 @@ export const whatwedoPage = () => {
               <img className="h-full w-auto" src={photos2} />
             </div>
             <div className=" h-full lg:w-1/3 w-full lg:pb-20 py-4 lg:pr-12 mx-4">
-              <ul className=" lg:list-outside list-inside my-4 text-2xl font-semibold lg:text-left text-justify">
+              <ul className=" lg:list-outside list-inside my-4 text-2xl font-semibold lg:text-left text-justify items-center">
                 <li>
                   - A9 sold products will be delivered directly from the
                   warehouse closest to you, on normal condition after your

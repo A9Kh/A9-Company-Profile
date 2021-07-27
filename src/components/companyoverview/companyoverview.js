@@ -5,7 +5,7 @@ import delivery from "assets/images/delivery.svg";
 //import { useTranslation } from "react-i18next";
 export const companyoverview = () => {
   //const { t } = useTranslation();
-  document.title = "A9 - Contact Us";
+  // document.title = "A9 - Contact Us";
 
   return (
     <div className="container mx-auto">
@@ -41,16 +41,16 @@ export const companyoverview = () => {
       </div>
       <hr className=" xl:w-6/12 " />
 
-      <div className="flex h-full bg-primary-400 rounded overflow-hidden shadow-lg my-20 ml-20">
+      <div className="flex h-full bg-primary-300 rounded overflow-hidden shadow-lg my-20 ml-20">
         <div className="md:flex">
-          <div className="w-full md:w-1/2 rounded-t">
-            <img src={shop} alt="" className="h-full w-full shadow" />
+          <div className="w-full md:w-6/12 rounded-t">
+            <img src={shop} alt="" className="h-full w-full shadow object-cover" />
           </div>
-          <div className="w-full md:w-1/2 rounded-t m-16">
-            <h1 className="uppercase tracking-wide text-4xl text-white font-bold pt-10 px-24">
+          <div className="w-full md:w-5/12 rounded-t m-36 -mt-4 -ml-4 pt-10 pl-20">
+            <h1 className="uppercase tracking-wide text-4xl text-white font-bold pt-10 px-24 pb-10">
               suppercharge <br /> your business
             </h1>
-            <p className="text-white ml-24 pt-4 text-2xl md:text-xl sm: text-sm ">
+            <p className="text-white ml-24 pt-4 text-3xl md:text-xl sm: text-sm pb-4">
               With A9, any business can scale and become <br /> a super
               eBusiness. Let our digital capabilities enable <br /> your
               ambitions as you grow in the region. Find out more about how you
