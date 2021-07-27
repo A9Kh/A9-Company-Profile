@@ -1,7 +1,7 @@
 const Description = () => {
     return (
-        <article>
-            <p className="mb-5">
+        <article className="px-3 sm:px-5 lg:px-1">
+            <p className="mb-5 text-sm sm:text-base">
                 At A9, the spirit of innovation is part of our DNA. We strive to hire the brightest minds from universities all around the globe, and we have
                 technical and non-technical career opportunities throughout A9 for students from all backgrounds. Amazon customers represent a wide
                 array of gender identities, races, ethnicities, abilities, ages, religions, sexual orientations, military status, backgrounds, and political views. We

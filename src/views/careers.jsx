@@ -14,7 +14,7 @@ const CareersPage = () => {
             <section className="container mx-auto max-w-7xl mb-10">
                 <Description />
             </section>
-            <section className="container mx-auto max-w-7xl">
+            <section className="container mx-auto max-w-7xl mb-10">
                 <Departments />
             </section>
         </main>

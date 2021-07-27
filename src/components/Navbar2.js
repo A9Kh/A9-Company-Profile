@@ -25,9 +25,9 @@ const Navbar2 = () => {
                 <img src={a9Logo} alt="" className="w-32 sm:w-36 md:w-44 lg:w-48 object-contain" />
                 <div className="flex items-center">
                     <span className="hidden sm:inline-block sm:text-lg md:text-xl lg:text-2xl text-primary-300 -mt-1">Follow Us:</span>
-                    <a href=""><FaFacebookSquare className="text-3xl sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></a>
-                    <a href=""><FaInstagram className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></a>
-                    <a href=""><FaYoutube className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></a>
+                    <Link to=""><FaFacebookSquare className="text-3xl sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
+                    <Link to=""><FaInstagram className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
+                    <Link to=""><FaYoutube className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
                 </div>
             </div>
 
@@ -40,10 +40,10 @@ const Navbar2 = () => {
                                 <div className="py-3 text-center text-white text-lg font-bold">
                                     {link.name}
                                 </div>
-                                <div className="absolute top-12 w-full">
+                                <div className="absolute top-12 pt-1 w-full z-10">
                                     {link.dropdown && link.dropdown.map((dd_link, k) => (
                                         <Link key={k} to={dd_link.to} id="dropdown" className={`bg-primary-300 hover:bg-primary-200 w-full ${dd_link.to === location.pathname ? "bg-primary-400" : ""}`}>
-                                            <div className="py-3 px-4 text-lg text-white font-bold border-t">
+                                            <div className="py-3 px-4 text-lg text-white font-bold border-t ">
                                                 {dd_link.name}
                                             </div>
                                         </Link>
@@ -65,7 +65,7 @@ const Navbar2 = () => {
                     </>}
                     <h1 className="w-full text-center text-xl font-bold text-white">{pageTitle}</h1>
                 </div>
-                {drawer && <div className="absolute bg-primary-300 top-12 w-full shadow-md">
+                {drawer && <div className="absolute bg-primary-300 top-12 pt-2 w-full shadow-md z-10">
                     {links.map((link, k) => (
                         <Link key={k} to={link.to} onClick={() => { setDrawer(false); setPageTitle(link.name) }}>
                             <div className="p-3 w-full text-lg text-white font-bold border-t hover:bg-primary-200">

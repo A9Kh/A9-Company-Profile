@@ -21,6 +21,7 @@ import CareersPage from "views/careers";
 import InvestorResourcesPage from "views/investorresources";
 import ContactUsPage from "views/contactus";
 import ErrorPage from "views/404";
+import jobdescription from "views/jobdescription";
 
 function App() {
   const [scroll, setscroll] = useState(false)
@@ -65,6 +66,7 @@ function App() {
             <Route exact path="/careers" component={CareersPage} />
             <Route exact path="/investorresources" component={InvestorResourcesPage} />
             <Route exact path="/contactus" component={ContactUsPage} />
+            <Route exact path="/job/1" component={jobdescription} />
             <Route path='*' exact={true} component={ErrorPage} />
           </Switch>
         </Fragment>
