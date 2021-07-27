@@ -9,9 +9,10 @@ export const companyoverview = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="lg:text-5xl  md:text-4xl sm:text-3xl font-bold mt-10">
-        Company Overview
+      <h1 className="lg:text-5xl  md:text-4xl sm:text-3xl font-bold mt-10 p-4">
+        Company Overview 
       </h1>
+      {/* {t("what_we")} */}
       <div className="sm:grid  lg:grid-cols-1 xl:grid-cols-2 md:grid-cols-1">
         <div className="flex items-center justify-center">
           <img src={map_pic} alt="" className="w-full object-cover " />

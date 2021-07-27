@@ -14,6 +14,7 @@ const en_whatwedo = {
         client: "Client",
         //End General
     */
+   what_we_do: "hello"
 }
 
 export default en_whatwedo;
