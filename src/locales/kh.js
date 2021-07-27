@@ -9,6 +9,13 @@ const kh_lang = {
         // projects: "គម្រោង",
         // aboutus: "អំពី​ពួក​យើង",
         // contactus: "ទាក់ទង​មក​ពួក​យើង",
+
+        //NavBar
+        aboutus: "អំពី​ពួក​យើង",
+        whatwedo: "អ្វីដែលយើងធ្វើ",
+        careers: "អាជីព",
+        investorresources: "ធនធានវិនិយោគិន",
+        contactus: "ទាក់ទង​មក​ពួក​យើង",
     }
 };
 

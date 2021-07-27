@@ -5,7 +5,7 @@ import { IoLocationSharp } from "react-icons/io5"
 const Footer2 = () => {
     return (
         <footer className="bg-gradient-to-r from-primary-200 via-primary-300 to-primary-400">
-            <div className="container mx-auto pt-5 lg:pt-10 pb-5 px-10 sm:px-2">
+            <div className="container mx-auto pt-5 lg:pt-10 pb-5 px-10 sm:px-3">
                 <div className="flex flex-wrap gap-5 sm:gap-0 lg:flex-nowrap">
                     <div className="flex w-full sm:w-6/12 lg:w-4/12">
                         <div className="flex flex-col sm:items-center">

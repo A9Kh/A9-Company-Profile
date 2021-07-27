@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Departments = () => {
     const dpm = [
         {
@@ -27,14 +29,16 @@ const Departments = () => {
     ]
 
     return (
-        <div className="px-1">
-            <h1 className="font-bold uppercase mb-5 text-2xl">departments</h1>
-            <div className="grid grid-cols-3 gap-10">
+        <div className="px-3 sm:px-5 lg:px-1">
+            <h1 className="font-bold uppercase mb-1 sm:mb-3 lg:mb-5 text-lg sm:text-xl lg:text-2xl">departments</h1>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 lg:gap-10">
                 {dpm.map((d, k) => (
-                    <div className="flex flex-col">
-                        <img src={d.img} alt="" className="object-cover flex-1 border border-black" />
-                        <h4 className="uppercase font-bold text-xl mt-2">{d.title}</h4>
-                    </div>
+                    <Link to={`/job/${k}`} key={k} className="flex">
+                        <div className="flex flex-col">
+                            <img src={d.img} alt="" className="object-cover border border-black flex-1" />
+                            <h4 className="uppercase font-bold text-base sm:text-lg lg:text-xl mt-2">{d.title}</h4>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>
