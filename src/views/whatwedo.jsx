@@ -4,10 +4,12 @@ const whatwedo = () => {
   document.title = "A9 - What we do";
 
   return (
-    <>
-      <WhatWeDoPage />
-    </>
+    <main>
+      <section>
+        <WhatWeDoPage />
+      </section>
+    </main>
   );
 };
 
-export default whatwedo;
+export default WhatWeDoPage;

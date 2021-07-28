@@ -1,5 +1,5 @@
 import React from "react";
-import ContactUs from "components/contactus/ContactUs";
+import ContactUs from "components/contactus/contactus";
 
 const contactus = () => {
   document.title = "A9 - Contact Us";
@@ -11,4 +11,4 @@ const contactus = () => {
   );
 };
 
-export default contactus;
+export default ContactUs;

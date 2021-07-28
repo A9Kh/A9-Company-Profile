@@ -1,5 +1,5 @@
 import React from "react";
-import CompanyOverview from "components/companyoverview/CompanyOverview";
+import CompanyOverview from "components/companyoverview/companyoverview";
 const companyoverview = () => {
   document.title = "A9 - Home";
 
@@ -10,4 +10,4 @@ const companyoverview = () => {
   );
 };
 
-export default companyoverview;
+export default CompanyOverview;

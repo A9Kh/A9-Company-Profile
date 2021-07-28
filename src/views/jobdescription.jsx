@@ -1,9 +1,10 @@
+import Jobdescription from "components/jobdescription/jobdescripiton";
 const jobdescription = () => {
-    return (
-        <div>
+  return (
+    <>
+      <Jobdescription />
+    </>
+  );
+};
 
-        </div>
-    )
-}
-
-export default jobdescription
+export default Jobdescription;
