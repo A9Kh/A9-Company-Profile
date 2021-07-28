@@ -1,7 +1,10 @@
-import { CgChevronLeft, CgChevronRight } from "react-icons/cg"
-import { Link } from "react-router-dom"
+import { CgChevronLeft, CgChevronRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const PressReleases = () => {
+    const { t } = useTranslation();
+
     const releases = [
         { date: "22 August 2020", title: "A9 Mall Appoints Chun Li as Group CEO", actions: "Download PDF" },
         { date: "22 October 2020", title: "First Malaysian Brand debuts on Lazada X Tmall Global “Sell to China” Partnership Program", actions: "Download PDF" },
@@ -13,7 +16,7 @@ const PressReleases = () => {
 
     return (
         <div>
-            <h1 className="uppercase font-bold mb-1 sm:mb-3 lg:mb-5 text-lg sm:text-xl lg:text-2xl px-3 sm:px-5 lg:px-1">press releases</h1>
+            <h1 className="uppercase font-bold mb-1 sm:mb-3 lg:mb-5 text-lg sm:text-xl lg:text-2xl px-3 sm:px-5 lg:px-1">{t("label_press_releases")}</h1>
             <h1 className="font-bold text-lg sm:text-xl lg:text-2xl mb-1 lg:mb-3 px-3 sm:px-5 lg:px-1">2020</h1>
             <div className="grid lg:grid-cols-2 gap-4 sm:gap-7 lg:gap-10 px-3 sm:px-5 lg:px-1">
                 {releases.map((rl, k) => (

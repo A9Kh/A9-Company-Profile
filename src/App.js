@@ -24,11 +24,12 @@ import ErrorPage from "views/404";
 import jobdescription from "views/jobdescription";
 
 function App() {
-  const [scroll, setscroll] = useState(false)
+  const [scroll, setscroll] = useState(false);
+  const [useKhmerFont, setUseKhmerFont] = useState(false)
 
   useEffect(() => {
     AOS.init({
-      delay: 0,
+      delay: 200,
       duration: 1000,
       once: true,
     });
@@ -49,8 +50,8 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen overflow-hidden">
-        < Navbar2 />
+      <div className={`flex flex-col min-h-screen overflow-hidden ${useKhmerFont ? "font-khmerFont" : ""}`}>
+        < Navbar2 khmerFontActivitor={setUseKhmerFont} />
 
         <Fragment>
           <ScrollToTop />
@@ -61,7 +62,7 @@ function App() {
 
           <Switch>
             <Route exact path="/" component={CompanyPage} />
-            <Route exact path="/abouta9" component={AboutA9Page} />
+            <Route exact path="/aboutus" component={AboutA9Page} />
             <Route exact path="/whatwedo" component={WhatWeDoPage} />
             <Route exact path="/careers" component={CareersPage} />
             <Route exact path="/investorresources" component={InvestorResourcesPage} />

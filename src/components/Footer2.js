@@ -1,8 +1,12 @@
 import a9LogoWhite from "assets/A9-white.png"
 import { FaPhoneAlt, FaGlobe, FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa"
 import { IoLocationSharp } from "react-icons/io5"
+import { Link } from "react-router-dom"
+import { useTranslation } from 'react-i18next';
 
 const Footer2 = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className="bg-gradient-to-r from-primary-200 via-primary-300 to-primary-400">
             <div className="container mx-auto pt-5 lg:pt-10 pb-5 px-10 sm:px-3">
@@ -10,27 +14,27 @@ const Footer2 = () => {
                     <div className="flex w-full sm:w-6/12 lg:w-4/12">
                         <div className="flex flex-col sm:items-center">
                             <img src={a9LogoWhite} alt="" className="w-48" />
-                            <h4 className="text-lg text-white font-poppins mt-1 sm:mt-2 lg:mt-3">Working Hours</h4>
-                            <h4 className="text-lg text-white font-poppins mt-1 sm:mt-2 lg:mt-3">Mon - Sun</h4>
-                            <h4 className="text-lg text-white font-poppins mt-1 sm:mt-2 lg:mt-3">(8:00 am - 7:00 pm)</h4>
+                            <h4 className="text-lg text-white mt-1 sm:mt-2 lg:mt-3">{t("label_working_hours")}</h4>
+                            <h4 className="text-lg text-white mt-1 sm:mt-2 lg:mt-3">{t("label_day")}</h4>
+                            <h4 className="text-lg text-white mt-1 sm:mt-2 lg:mt-3">(8:00 am - 7:00 pm)</h4>
                         </div>
                     </div>
                     <div className="flex flex-col gap-5 sm:gap-0 sm:w-6/12 lg:w-4/12 lg:flex-row">
                         <div className="flex-1 flex flex-col">
-                            <h4 className="text-lg text-white font-poppins font-bold">About Us</h4>
-                            <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3">Company Overview</span>
+                            <Link to="/aboutus" className="text-lg text-white font-bold hover:text-gray-200">{t("label_about_us")}</Link>
+                            <Link to="/" className="text-sm text-white mt-1 sm:mt-2 lg:mt-3 hover:text-gray-200">{t("label_company_overview")}</Link>
                         </div>
                         <div className="flex-1 flex flex-col">
-                            <h4 className="text-lg text-white font-poppins font-bold">What we do?</h4>
-                            <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3">A9 Mall</span>
-                            <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3">Delivery & Logistic</span>
+                            <Link to="/whatwedo" className="text-lg text-white font-bold hover:text-gray-200">{t("label_what_we_do")}</Link>
+                            <Link to="#" className="text-sm text-white mt-1 sm:mt-2 lg:mt-3 hover:text-gray-200">{t("label_a9_mall")}</Link>
+                            <Link to="#" className="text-sm text-white mt-1 sm:mt-2 lg:mt-3 hover:text-gray-200">{t("label_delivery_and_logistic")}</Link>
                         </div>
                     </div>
                     <div className="flex flex-col w-full sm:mt-7 lg:mt-0 lg:w-4/12">
-                        <h4 className="text-lg text-white font-poppins font-bold">Contact Us</h4>
+                        <Link to="/contactus" className="text-lg text-white font-bold hover:text-gray-200">{t("label_contact_us")}</Link>
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaPhoneAlt className="inline-block text-xl -mt-1" />&emsp; 092 555 365 / 010 595 365</span>
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaGlobe className="inline-block text-xl -mt-1" />&emsp; a9@a9kh.com</span>
-                        <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><IoLocationSharp className="inline-block text-xl -mt-1" />&emsp; #211, Street 169, Sangkat Veal Vong , Khan 7 Makara, Phnom Penh</span>
+                        <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><IoLocationSharp className="inline-block text-xl -mt-1" />&emsp; {t("label_address")}</span>
                         <div className="flex mt-1 sm:mt-2 lg:mt-3">
                             <FaFacebookSquare className="text-2xl text-white mr-5" />
                             <FaInstagram className="text-2xl text-white mr-5" />
@@ -38,7 +42,7 @@ const Footer2 = () => {
                         </div>
                     </div>
                 </div>
-                <h4 className="block text-center text-sm sm:text-md md:text-lg lg:text-xl text-white mt-3">Copyright 2020-2021 All right reserved by A9 online kh co., LTD.</h4>
+                <h4 className="block text-center text-sm sm:text-md md:text-lg lg:text-xl text-white mt-3">Copyright &copy; 2020-2021 All right reserved by A9 online kh co., LTD.</h4>
             </div>
         </footer>
     )
