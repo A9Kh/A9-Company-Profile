@@ -1,12 +1,12 @@
 import React from "react";
-import contactus from "components/contactus/contactus";
+import ContactUs from "components/contactus/ContactUs";
 
-const contactusPage = () => {
+const contactus = () => {
   document.title = "A9 - Contact Us";
 
   return (
     <>
-      <contactus />
+      <ContactUs />
     </>
   );
 };

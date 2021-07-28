@@ -1,9 +1,11 @@
 import React from "react";
-import companyoverview from "components/companyoverview/companyoverview";
-const CompanyPage = () => {
+import CompanyOverview from "components/companyoverview/CompanyOverview";
+const companyoverview = () => {
+  document.title = "A9 - Home";
+
   return (
     <>
-      <companyoverview />
+      <CompanyOverview />
     </>
   );
 };

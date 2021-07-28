@@ -276,7 +276,8 @@ module.exports = {
         'monospace',
       ],
       poppins: ["Poppins"],
-      voltaire: ["Voltaire"]
+      voltaire: ["Voltaire"],
+      khmerFont: ["Hanuman"]
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

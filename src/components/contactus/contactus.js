@@ -11,7 +11,7 @@ export const contactusPage = () => {
           <div className="text-2xl font-bold mb-4">
             <h1 className="text-primary-300">FOLLOW US:</h1>
             <div className="flex lg:justify-start justify-center w-auto h-auto py-8">
-              <a class="hover:opacity-75 h-16 w-12 p-1" href="#">
+              <a className="hover:opacity-75 h-16 w-12 p-1" href="#">
                 <img src={icon1} />
               </a>
               <a class="hover:opacity-75 h-16 w-12 p-1 mx-4" href="#">

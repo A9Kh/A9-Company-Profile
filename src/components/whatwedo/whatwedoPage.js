@@ -28,7 +28,7 @@ export const whatwedoPage = () => {
           {/* first */}
           <div className="flex flex-wrap lg:flex-row flex-col h-auto max-w-full">
             <div class="flex-none lg:h-screen h-auto lg:w-6/12 sm:w-full lg:px-12 sm:px-8 lg:pt-16 sm:pt-12">
-              <img class="h-screen w-full shadow-md" src={photos} />
+              <img className="h-screen w-full shadow-md" src={photos} />
             </div>
             <div className="flex-none lg:flex-1 h-auto lg:w-6/12 sm:w-full tracking-wide lg:p-16 sm:p-12 mt-4">
               <div className="flex flex-wrap justify-between">
