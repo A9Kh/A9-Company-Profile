@@ -27,10 +27,10 @@ export const whatwedoPage = () => {
         <div className="flex flex-wrap lg:flex-col sm:flex-row jutify-center w-full text-gray-700 bg-gray-100 rounded-lg shadow-md tracking-wide subpixel-antialiased lg:mb-32 mb-12">
           {/* first */}
           <div className="flex flex-wrap lg:flex-row flex-col h-auto max-w-full">
-            <div class="flex-none lg:h-screen h-auto lg:w-6/12 sm:w-full lg:px-12 sm:px-8 lg:pt-16 sm:pt-12">
+            <div class="flex-1 lg:h-screen h-full lg:w-6/12 sm:w-full lg:px-12 sm:px-8 lg:pt-16 sm:pt-12 lg:py-auto py-4">
               <img class="h-screen w-full shadow-md" src={photos} />
             </div>
-            <div className="flex-none lg:flex-1 h-auto lg:w-6/12 sm:w-full tracking-wide lg:p-16 sm:p-12 mt-4">
+            <div className="lg:flex-1 h-auto lg:w-6/12 sm:w-full tracking-wide lg:p-16 sm:p-12 mt-4">
               <div className="flex flex-wrap justify-between">
                 <div className="lg:h-auto">
                   <h1 className="lg:my-8 sm:my-4 ml-4 lg:text-3xl sm:text-2xl font-bold text-gray-900">
@@ -65,8 +65,8 @@ export const whatwedoPage = () => {
             </div>
           </div>
           {/* second */}
-          <div className="flex flex-wrap lg:flex-row flex-col h-1/3 w-full">
-            <div className="h-full lg:w-6/12 w-full lg:py-8 py-4 lg:pl-12 lg:pr-4 px-4">
+          <div className="flex flex-wrap lg:flex-row flex-col h-1/3 w-full lg:my-auto sm:my-auto my-8">
+            <div className="h-full lg:w-1/2 w-full lg:py-8 py-4 lg:pl-12 lg:pr-4 px-4">
               <div className="lg:my-8 my-4 lg:text-3xl sm:text-2xl font-bold text-gray-900">
                 <h1>Delivery & Logistics</h1>
                 <p className="lg:my-8 my-4 lg:text-2xl sm:text-lg font-semibold lg:text-left text-justify">
@@ -75,14 +75,14 @@ export const whatwedoPage = () => {
                   don’t support selecting your own express delivery company.
                 </p>
               </div>
-              <div className="lg:my-8 my-4 lg:text-2xl sm:text-2xl font-bold text-gray-900 lg:mx-28">
+              <div className="lg:my-8 my-4 lg:text-2xl sm:text-lg font-bold text-gray-900 lg:mx-28">
                 <h1>- Delivery Time</h1>
                 <h1>- Delivery area</h1>
                 <h1>- Standard delivery fee</h1>
                 <h1>- Product’s receipt</h1>
               </div>
             </div>
-            <div className="flex-none lg:h-full lg:w-6/12 w-full lg:py-8 py-4 lg:pr-12 px-4">
+            <div className="flex-none lg:h-full lg:w-1/2 w-full lg:py-8 py-4 lg:pr-12 px-4">
               <img
                 className="h-full w-full rounded-md shadow-md"
                 src={photos1}

@@ -57,7 +57,7 @@ export const companyoverview = () => {
             </h1>
             <p className="text-white lg:ml-20 mx-8 pt-4 lg:text-2xl text-lg pb-4 mx-8">
               With A9, any business can scale and become <br /> a super
-              eBusiness. Let our digital capabilities enable <br /> your
+              Business. Let our digital capabilities enable <br /> your
               ambitions as you grow in the region. Find out more about how you
               can grow your business with A9.
             </p>
