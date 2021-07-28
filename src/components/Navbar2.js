@@ -77,7 +77,7 @@ const Navbar2 = ({ khmerFontActivitor }) => {
     return (
         <nav>
             <div className="flex justify-between items-center py-1 px-3 sm:py-2 sm:px-5 md:py-3 md:px-7 lg:px-10">
-                <Link to="/" className="flex" onClick={() => setPageTitle(t("Company Overview"))}>
+                <Link to="/" className="flex" onClick={() => setPageTitle("Company Overview")}>
                     <img src={a9Logo} alt="" className="w-32 sm:w-36 md:w-44 lg:w-48 object-contain" />
                 </Link>
                 <div className="flex items-center">
@@ -123,7 +123,7 @@ const Navbar2 = ({ khmerFontActivitor }) => {
                     </> : <>
                         <MdClose className="text-3xl text-white cursor-pointer hover:text-gray-200" onClick={() => setDrawer(false)} />
                     </>}
-                    <h1 className="w-full text-center text-xl font-bold text-white">{pageTitle}</h1>
+                    <h1 className="w-full text-center text-xl font-bold text-white">{t(pageTitle)}</h1>
                     <div className="relative block lg:hidden">
                         {/* language changer for mobile */}
                         <MdLanguage className="text-white text-3xl hover:text-gray-200 rounded-full cursor-pointer" onClick={() => setLangDrawer(prev => !prev)} />
@@ -139,7 +139,7 @@ const Navbar2 = ({ khmerFontActivitor }) => {
                 </div>
                 {drawer && <div className="absolute bg-primary-300 top-12 pt-2 w-full shadow-md z-10 rounded-b-xl">
                     {links.map((link, k) => (
-                        <Link key={k} to={link.to} onClick={() => { setDrawer(false); setPageTitle(t(link.name)) }}>
+                        <Link key={k} to={link.to} onClick={() => { setDrawer(false); setPageTitle(link.name) }}>
                             <div className="p-3 w-full text-lg text-white font-bold border-t hover:bg-primary-200">
                                 {t(link.name)}
                             </div>
