@@ -32,7 +32,7 @@ const zhHans_lang = {
         label_a9_mall: "A9商城",
         label_delivery_and_logistic: "交付 & 物流",
         label_contact_us: "联系我们",
-        label_address: "#211, Street 169, Sangkat Veal Vong , Khan 7 Makara, Phnom Penh",
+        address: "#211, Street 169, Sangkat Veal Vong , Khan 7 Makara, Phnom Penh",
         // end footer
     }
 };

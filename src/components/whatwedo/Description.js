@@ -1,12 +1,14 @@
+import { useTranslation } from 'react-i18next';
+
 const Description = () => {
+    const { t } = useTranslation();
+
     return (
         <div>
-            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">What We Do</h1>
-            <article className="mt-5">
+            <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">{t("label_what_we_do")}</h1>
+            <article className="mt-1 sm:mt-3 lg:mt-5 text-sm sm:text-base tracking-wide">
                 <p>
-                    Although our business has evolved over the years, one constant is customers’ desire for lower prices, better selection, and convenient services.
-                    Today, Amazon shoppers can find what they’re looking for online and in person. From delivering fresh produce to their doorstep to creating and
-                    distributing movies, music, and more, we are always finding new ways to delight our customers.
+                    {t("what_we_do_p")}
                 </p>
             </article>
         </div>

@@ -21,7 +21,7 @@ const Corporate = () => {
                     <span className="font-bold"> a9online.com</span>.
                 </p>
             </article>
-            <div className="mt-5 grid gap-5 lg:gap-0 lg:grid-cols-3">
+            <div className="mt-5 lg:mt-10 grid gap-5 lg:gap-0 lg:grid-cols-3">
                 {reasons.map((reason, k) => (
                     <div key={k} className={`flex flex-row lg:flex-col items-center ${reason.isRightSide ? "flex-row-reverse" : ""}`}>
                         <img src={reason.img} alt="" className="w-20 sm:w-28 lg:w-40 p-3 border border-primary-300 rounded-full" />

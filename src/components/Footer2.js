@@ -34,7 +34,7 @@ const Footer2 = () => {
                         <Link to="/contactus" className="text-lg text-white font-bold hover:text-gray-200">{t("label_contact_us")}</Link>
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaPhoneAlt className="inline-block text-xl -mt-1" />&emsp; 092 555 365 / 010 595 365</span>
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaGlobe className="inline-block text-xl -mt-1" />&emsp; a9@a9kh.com</span>
-                        <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><IoLocationSharp className="inline-block text-xl -mt-1" />&emsp; {t("label_address")}</span>
+                        <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><IoLocationSharp className="inline-block text-xl -mt-1" />&emsp; {t("address")}</span>
                         <div className="flex mt-1 sm:mt-2 lg:mt-3">
                             <FaFacebookSquare className="text-2xl text-white mr-5" />
                             <FaInstagram className="text-2xl text-white mr-5" />

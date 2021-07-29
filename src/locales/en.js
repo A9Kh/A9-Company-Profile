@@ -34,7 +34,7 @@ const en_lang = {
         label_a9_mall: "A9 Mall",
         label_delivery_and_logistic: "Delivery & Logistic",
         label_contact_us: "Contact Us",
-        label_address: "#211, Street 169, Sangkat Veal Vong , Khan 7 Makara, Phnom Penh",
+        address: "#211, Street 169, Sangkat Veal Vong , Khan 7 Makara, Phnom Penh",
         // end footer
     }
 };

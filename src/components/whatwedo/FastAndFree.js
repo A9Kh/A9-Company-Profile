@@ -1,25 +1,22 @@
 import motoMan from "assets/images/whatWeDo/pic-3.jpg"
+import { useTranslation } from 'react-i18next';
 
 const FastAndFree = () => {
+    const { t } = useTranslation();
+
     const pionts = [
-        "A9 sold products will be delivered directly from \
- the warehouse closest to you, on normal condition \
- after your payment, all products will be out for \
- delivery within 72 hours.",
-        "Support every area in Cambodia",
-        "A9 store-owned product shipping is free, \
- the postage of third - party merchants will be \
- charged according to the information displayed \
- on the order page below.",
+        "faf_p_1",
+        "faf_p_2",
+        "faf_p_3",
     ]
 
     return (
-        <div className="flex">
-            <img src={motoMan} alt="" className="w-8/12" />
-            <div className="w-4/12 pt-16">
+        <div className="flex flex-col lg:flex-row">
+            <img src={motoMan} alt="" className="w-full lg:w-8/12 object-cover" />
+            <div className="w-full lg:w-4/12 mt-7 lg:mt-16 pl-5 text-sm sm:text-base">
                 <ul className="list-disc">
                     {pionts.map((p, k) => (
-                        <li key={k}>{p}</li>
+                        <li key={k}>{t(p)}</li>
                     ))}
                 </ul>
             </div>
