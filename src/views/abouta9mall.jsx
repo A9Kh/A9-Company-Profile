@@ -8,13 +8,13 @@ const AboutA9Page = () => {
 
     return (
         <main className="container mx-auto max-w-7xl">
-            <section className="mt-4 sm:mt-7 lg:mt-10 mb-14">
+            <section className="mt-4 sm:mt-7 lg:mt-10 mb-20">
                 <AboutA9 />
             </section>
-            <section className="mb-10">
+            <section className="mb-20">
                 <PressReleases />
             </section>
-            <section className="mb-16">
+            <section className="mb-10">
                 <CorePillars />
             </section>
         </main>

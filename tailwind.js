@@ -277,7 +277,8 @@ module.exports = {
       ],
       poppins: ["Poppins"],
       voltaire: ["Voltaire"],
-      khmerFont: ["Hanuman"]
+      khmerFont: ["Hanuman"],
+      openSans: ["Open Sans"]
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],

@@ -56,13 +56,20 @@ const Navbar2 = ({ khmerFontActivitor }) => {
                 }
             })
         }
+        if (cookies.get("useKhmerFont") === "true") {
+            khmerFontActivitor(true);
+        } else {
+            khmerFontActivitor(false);
+        }
     }, []);
 
     const handleChange = (value) => {
         if (value === "kh") {
-            khmerFontActivitor(true);
+            var s = true;
+            khmerFontActivitor(s);
         } else {
-            khmerFontActivitor(false);
+            var s = false;
+            khmerFontActivitor(s);
         }
         i18n.changeLanguage(value);
 
@@ -72,6 +79,7 @@ const Navbar2 = ({ khmerFontActivitor }) => {
         date.setDate(date.getDate() + 7);
 
         cookies.set('lang', value, { expires: date });
+        cookies.set('useKhmerFont', s, { expires: date });
     };
 
     return (

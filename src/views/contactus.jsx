@@ -1,14 +1,20 @@
+import Info from "components/contactus/Info";
+import MapA9 from "components/contactus/MapA9";
 import React from "react";
-import ContactUs from "components/contactus/contactus";
 
 const contactus = () => {
   document.title = "A9 - Contact Us";
 
   return (
-    <>
-      <ContactUs />
-    </>
+    <main>
+      <section className="mt-10 container mx-auto max-w-7xl">
+        <Info />
+      </section>
+      <section className="mb-10">
+        <MapA9 />
+      </section>
+    </main>
   );
 };
 
-export default ContactUs;
+export default contactus;

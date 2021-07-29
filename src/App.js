@@ -50,7 +50,7 @@ function App() {
 
   return (
     <Router>
-      <div className={`flex flex-col min-h-screen overflow-hidden ${useKhmerFont ? "font-khmerFont" : ""}`}>
+      <div className={`flex flex-col min-h-screen overflow-hidden ${useKhmerFont ? "font-khmerFont" : "font-openSans"}`}>
         < Navbar2 khmerFontActivitor={setUseKhmerFont} />
 
         <Fragment>
