@@ -4,7 +4,7 @@ import photos from "assets/images/pic-1.jpg";
 import photos1 from "assets/images/pic-2.jpg";
 import photos2 from "assets/images/pic-3.png";
 import arrow_icon from "assets/images/arrow_icon.png";
-export const whatwedoPage = () => {
+export const WhatwedoPage = () => {
   //const photos = [{ id: 1, img: pic1 }];
   //const photos = require("assets/images/pic-1.jpg"); // with require
   return (
@@ -90,13 +90,13 @@ export const whatwedoPage = () => {
                 style={{ height: "350px" }}
               />
             </div>
-            <div className="w-full lg:hidden px-4">
+            {/* <div className="w-full lg:hidden px-4">
               <img
                 src={photos1}
                 alt=""
                 className="h-full w-full rounded-md shadow-md"
               />
-            </div>
+            </div> */}
           </div>
           {/* last */}
           <div className="flex flex-wrap lg:flex-nowrap">
@@ -133,4 +133,4 @@ export const whatwedoPage = () => {
     </div>
   );
 };
-export default whatwedoPage;
+export default WhatwedoPage;

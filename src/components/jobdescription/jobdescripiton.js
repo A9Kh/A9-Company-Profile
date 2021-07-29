@@ -1,5 +1,5 @@
 
-import "./home.css";
+import "./home.css"
 export const jobdescription = () => {
   return (
     <div className="container mx-auto max-w-7xl lg:p-8 md:p-8 sm: p-8">
@@ -92,31 +92,6 @@ export const jobdescription = () => {
             <label htmlFor="Phone Number" className = "text-2xl px-0 py-4 lg:text-xl md:text-base sm:text-sm">Phone Number</label>
               <input type="text"className = "w-full p-4   border-gray-400 border rounded-2xl box-border mt-2 mb-4 resize-y text-2xl mt-4 lg:text-base md:text-sm sm:text-xs" />
             </div>
-            <div className="grid grid-cols-2">
-              <div className="mr-10">
-                <label htmlFor="CountryCode" className="text-2xl px-0 py-4">
-                  Country Code
-                </label>
-                <select
-                  name="countrycode"
-                  id="countrycode"
-                  className="w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4"
-                >
-                  <option value="Select">Select</option>
-                  <option value="885">855</option>
-                  <option value="884">884</option>
-                  <option value="93">93</option>
-                </select>
-              </div>
-              <div className="ml-10">
-                <label htmlFor="Phone Number" className="text-2xl px-0 py-4 ">
-                  Phone Number
-                </label>
-                <input
-                  type="text"
-                  className="w-full p-4   border-black border rounded-lg box-border mt-2 mb-4 resize-y text-2xl mt-4"
-                />
-              </div>
             </div>
             <div>
                 <label htmlFor="CurrentLocation" className = "text-2xl px-0 py-4 lg:text-xl md:text-base sm:text-sm">Current Location</label>
@@ -185,17 +160,11 @@ export const jobdescription = () => {
             <div className = "flex justify-center mb-24">
                 <button className = "bg-primary-300 lg:text-3xl md:text-2xl sm:text-xl text-4xl  text-white font-simibold hover:text-white white py-4 px-24 lg:px-16 md:px-10 sm:px-4 border border-blue hover: border-primary-300 rounded-full ">Apply</button>
             </div>
-            <div className="ml-96">
-              <button className="bg-primary-300 text-2xl  text-white font-simibold hover:text-white white py-4 px-24 border border-blue hover: border-primary-300 rounded-full ">
-                Apply
-              </button>
             </div>
-          </div>
-          </div>
+          {/* </div> */}
         </form>
-  
       </div>
-    </div>
-  );
+    // </div>
+  )
 };
 export default jobdescription;
