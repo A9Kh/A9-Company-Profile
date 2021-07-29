@@ -1,19 +1,28 @@
 const zh_investorresources = {
-    /*
-        Add your keywords for localization here, remove this comment after read,
-        also, for better readability, divide into sections, 
-        also, just need to add to en file first, after fully done with the section, copy everything from en to kh & zh,
-                then remove all value. Leaving "" as value only for zh & kh,
-        also, check in general en in root folder first for whether the key you trying to add exist in general useage
-        for example: 
-        //Operation
-        add: "Add",
-        edit: "Edit",
-        //End Operation
-        //General
-        client: "Client",
-        //End General
-    */
+    // cover
+    label_investor_overview: "投资者概览",
+    // end cover
+
+    // corporate
+    label_corporate_profile: "公司简介",
+    investorresources_p: "A9 Mall 是一家领先的产品和服务分销商，为工业客户提供增值和总体成本节约解决方案自 1908 年以来，遍及美国、加拿大和墨西哥索诺拉州的几乎所有行业。A9 提供创新泵送解决方案、供应链服务和维护、维修、运营和生产（“MROP”）服务强调和利用 A9 在旋转设备、轴承、动力方面的丰富产品知识和技术专长传输、工业用品和安全产品和服务。 A9 广泛的 MROP 产品和服务解决方案允许 A9 灵活且以客户为导向，为我们的客户创造竞争优势。 A9的业务板块包括服务中心、创新泵送解决方案和供应链服务。 有关更多信息，请访问",
+    reason_title_1: "我们构建深度，解决方案定向关系与我们的客户。",
+    reason_title_2: "我们加倍了我们的每五年营业一次",
+    reason_title_3: "我们致力于内部和外部生长",
+    // end corporate
+
+    // faqs
+    label_investor_resources: "投资者资源",
+    label_faqs: "常见问题",
+    question_1: "A9 Mall 开业多久了？",
+    answer_1: "创始人兼首席执行官 Ken 于 2020 年开设了 A9 在线商店的虚拟大门。该公司于 2019 年在柬埔寨注册成立，并于 2021 年重新注册。公司的主要公司办公室位于金边。 A9于2020年5月完成首次公开募股。",
+    question_2: "A9 Mall 开业多久了？",
+    answer_2: "创始人兼首席执行官 Ken 于 2020 年开设了 A9 在线商店的虚拟大门。该公司于 2019 年在柬埔寨注册成立，并于 2021 年重新注册。公司的主要公司办公室位于金边。 A9于2020年5月完成首次公开募股。",
+    question_3: "A9 Mall 开业多久了？",
+    answer_3: "创始人兼首席执行官 Ken 于 2020 年开设了 A9 在线商店的虚拟大门。该公司于 2019 年在柬埔寨注册成立，并于 2021 年重新注册。公司的主要公司办公室位于金边。 A9于2020年5月完成首次公开募股。",
+    question_4: "A9 Mall 开业多久了？",
+    answer_4: "创始人兼首席执行官 Ken 于 2020 年开设了 A9 在线商店的虚拟大门。该公司于 2019 年在柬埔寨注册成立，并于 2021 年重新注册。公司的主要公司办公室位于金边。 A9于2020年5月完成首次公开募股。",
+    // end faqs
 };
 
 export default zh_investorresources;

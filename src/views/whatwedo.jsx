@@ -1,13 +1,15 @@
 import React from "react";
-import whatwedoPage from "components/whatwedo/whatwedoPage";
-const WhatWeDoPage = () => {
-  document.title = "A9 - What We Do";
+import WhatWeDoPage from "components/whatwedo/WhatWeDoPage";
+const whatwedo = () => {
+  document.title = "A9 - What we do";
 
   return (
-    <>
-      <whatwedoPage />
-    </>
+    <main>
+      <section>
+        <WhatWeDoPage />
+      </section>
+    </main>
   );
 };
 
-export default whatwedoPage;
+export default WhatWeDoPage;

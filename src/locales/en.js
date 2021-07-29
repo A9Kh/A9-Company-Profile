@@ -1,42 +1,41 @@
-import en_aboutus from "./aboutus/en_aboutus";
+import en_abouta9 from "./abouta9/en_abouta9";
 import en_careers from "./careers/en_careers";
 import en_contactus from "./contactus/en_contactus";
 import en_whatwedo from "./whatwedo/en_whatwedo";
 import en_investorresources from "./investorresources/en_investorresources";
+import en_companyoverview from "./companyoverview/en_companyoverview"
 
 console.log()
 
 const en_lang = {
     translation: {
         ...en_careers,
-        ...en_aboutus,
+        ...en_abouta9,
         ...en_whatwedo,
         ...en_contactus,
         ...en_investorresources,
-        // //Navigation
-        // home: "Home",
-        // services: "Services",
-        // clients: "Clients",
-        // projects: "Projects",
-        // aboutus: "About Us",
-        // contactus: "Contact Us",
-        // //End Navigation
-        // //Footer
-        // findus: "Find us at",
-        // company: "Company",
-        // specialize_in: "We specialize in",
-        // inquiry: "Work Inquiries",
-        // //End Footer
-        // explore_more: "Explore More",
-        // error_message: "The page you are looking for does not exist",
-        // back_home: "Go back Home",
+        ...en_companyoverview,
 
-        //Navbar
-        aboutus: "About Us 123",
-        whatwedo: "What We Do",
-        careers: "Careers",
-        investorresources: "Investor Resources",
-        contactus: "Contact Us",
+        // navbar
+        "About Us": "About Us",
+        "What We Do": "What We Do",
+        "Careers": "Careers",
+        "Investor Resources": "Investor Resources",
+        "Contact Us": "Contact Us",
+        "Company Overview": "Company Overview",
+        // end navbar
+
+        // footer
+        label_working_hours: "Working Hours",
+        label_day: "Mon - Sun",
+        label_about_us: "About Us",
+        label_company_overview: "Company overview",
+        label_what_we_do: "What we do?",
+        label_a9_mall: "A9 Mall",
+        label_delivery_and_logistic: "Delivery & Logistic",
+        label_contact_us: "Contact Us",
+        label_address: "#211, Street 169, Sangkat Veal Vong , Khan 7 Makara, Phnom Penh",
+        // end footer
     }
 };
 

@@ -11,13 +11,13 @@ export const contactusPage = () => {
           <div className="text-2xl font-bold mb-4">
             <h1 className="text-primary-300">FOLLOW US:</h1>
             <div className="flex lg:justify-start justify-center w-auto h-auto py-8">
-              <a class="hover:opacity-75 h-16 w-12 p-1" href="#">
+              <a className="hover:opacity-75 h-16 w-12 p-1" href="#">
                 <img src={icon1} />
               </a>
-              <a class="hover:opacity-75 h-16 w-12 p-1 mx-4" href="#">
+              <a className="hover:opacity-75 h-16 w-12 p-1 mx-4" href="#">
                 <img src={icon2} />
               </a>
-              <a class="hover:opacity-75 h-16 w-12" href="#">
+              <a className="hover:opacity-75 h-16 w-12" href="#">
                 <img src={icon3} />
               </a>
             </div>
@@ -56,7 +56,6 @@ export const contactusPage = () => {
       <iframe
         className="lg:h-screen h-80 w-full mb-20 border-solid border-t-2 border-b-2 border-gray-400"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d581.0505403722894!2d104.91070083793062!3d11.56429021386043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951ac4c6535c3%3A0xe673862fa9ba733!2sA9%20Online%20KH%20CO.%2CLTD.!5e0!3m2!1sen!2skh!4v1627102194233!5m2!1sen!2skh"
-        allowfullscreen=""
         loading="lazy"
       ></iframe>
     </div>
