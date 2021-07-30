@@ -1,18 +1,17 @@
-import React, { useRef, useEffect, useState } from "react";
-import { useTranslation } from 'react-i18next';
+import a9Logo from "assets/A9-primary.png"
+import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa"
 import { Link, useLocation } from 'react-router-dom';
-import Cookies from 'universal-cookie';
-import i18n from "i18next";
+import { GiHamburgerMenu } from "react-icons/gi"
+import { useEffect, useRef, useState } from "react";
+import { MdClose } from "react-icons/md"
 import Flag from 'react-flagkit';
+import { MdLanguage } from "react-icons/md"
+import i18n from "i18next";
+import Cookies from 'universal-cookie';
+import { useTranslation } from 'react-i18next';
 
-//Icons
-import { CgMenuLeftAlt } from "react-icons/cg";
-import { MdClose, MdLanguage } from "react-icons/md";
-
-// Logo
-
-let navigation = [
-    { name: 'About Us', to: '/' },
+let links = [
+    { name: 'About Us', to: '/aboutus', },
     { name: 'What We Do', to: '/whatwedo' },
     { name: 'Careers', to: '/careers' },
     { name: 'Investor Resources', to: '/investorresources' },
@@ -25,24 +24,19 @@ const langues = [
     { name: "ភាសារខ្មែរ", country: "KH", lang: "kh" },
 ];
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
-
-//TODO rework language menu
-//TODO dynamic navbar, elevate on scroll
-const MyNavbar = () => {
+const Navbar2 = ({ khmerFontActivitor }) => {
     const { t } = useTranslation();
-    const cookies = new Cookies();
-    const [drawer, setdrawer] = useState(true);
-    const [menu, setMenu] = useState(false);
     const location = useLocation();
+    const [drawer, setDrawer] = useState(false);
+    const [pageTitle, setPageTitle] = useState("");
+    const [langDrawer, setLangDrawer] = useState(false)
     const wrapperRef = useRef(null);
+    const cookies = new Cookies();
 
     useEffect(() => {
         function handleLangMenu(event) {
             if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-                setMenu(false)
+                setLangDrawer(false)
             }
         }
 
@@ -52,92 +46,117 @@ const MyNavbar = () => {
         };
     }, [wrapperRef]);
 
+    useEffect(() => {
+        if (location.pathname === "/") {
+            setPageTitle("Company Overview");
+        } else {
+            links.forEach((link) => {
+                if (location.pathname === link.to) {
+                    setPageTitle(link.name);
+                }
+            })
+        }
+        if (cookies.get("useKhmerFont") === "true") {
+            khmerFontActivitor(true);
+        } else {
+            khmerFontActivitor(false);
+        }
+    }, []);
+
     const handleChange = (value) => {
+        if (value === "kh") {
+            var s = true;
+            khmerFontActivitor(s);
+        } else {
+            var s = false;
+            khmerFontActivitor(s);
+        }
         i18n.changeLanguage(value);
 
-        setMenu(false);
+        setLangDrawer(false);
 
         const date = new Date();
         date.setDate(date.getDate() + 7);
 
         cookies.set('lang', value, { expires: date });
+        cookies.set('useKhmerFont', s, { expires: date });
     };
 
     return (
-        <div className="fixed h-16 z-20 w-full text-white bg-gray-900 shadow-xl">
-            <div className="h-full flex flex-col max-w-screen-xl lg:mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-8">
-                <div className="p-4 flex flex-row items-center justify-between">
-                    <button className="lg:hidden focus:outline-none focus:shadow-outline" onClick={() => setdrawer(!drawer)}>
-                        {drawer ? <CgMenuLeftAlt size="28" /> : <MdClose size="28" />}
-                    </button>
-
-                    <Link to="/" className="text-lg font-semibold tracking-widest uppercase rounded-lg">
-                        <img className="object-cover w-8 h-auto lg:hidden" src="" alt="logo" />
-                        <img className="object-cover w-20 h-auto hidden lg:block" src="" alt="logo" />
-                    </Link>
-
-                    <MdLanguage onClick={() => setMenu(!menu)} className="lg:hidden h-6 w-6 text-white hover:text-gray-400" />
-                </div>
-
-                <div className={classNames(menu ? "block" : "hidden", "  lg:hidden absolute right-5 top-12 p-4 bg-white rounded ring-2 ring-black shadow-lg w-48")}>
-                    {
-                        langues.map((p, k) =>
-                            <button key={k} className="flex justify-start items-center my-2 px-4 py-2 w-full text-md font-bold tracking-wider rounded-md hover:bg-gray-200 text-black" onClick={() => handleChange(p.lang)}>
-                                <Flag country={p.country} className="mr-3" />
-                                {p.name}
-                            </button>
-                        )
-                    }
-                </div>
-
-                {/* Mobile Nav */}
-                <div className={classNames(drawer ? "hidden" : "block", " bg-gray-900 lg:hidden px-4 py-3 rounded-br-lg md:rounded-br-xl rounded-bl-lg md:rounded-bl-xl space-y-2 shadow-2xl")} >
-                    {
-                        navigation.map((p) => (
-                            <Link onClick={() => setdrawer(true)} key={p.name} to={p.to} className={classNames(
-                                p.to === location.pathname ? 'bg-red-900 text-white' : 'text-gray-300 hover:bg-gray-600 hover:text-white',
-                                'block px-3 py-2 rounded text-base font-bold'
-                            )}>
-                                {t(p.name)}
-                            </Link>
-                        ))
-                    }
-                </div>
-
-                {/* Desktop Nav */}
-                <nav className="hidden flex-col flex-grow pb-4 md:pb-0 lg:flex lg:justify-end lg:flex-row">
-                    {
-                        navigation.map((p, k) =>
-                            <Link key={k} to={p.to} className={classNames(p.to === location.pathname ? 'bg-red-800' : 'duration-750 transition ease-in hover:bg-gray-600 hover:bg-opacity-50 hover:text-white', 'px-4 py-2 mx-2 text-sm font-semibold rounded md:mt-0')}>
-                                {t(p.name)}
-                            </Link>
-                        )
-                    }
-
-                    {/* Language dropdown */}
-                    <div className="hidden lg:block relative self-center" >
-                        <MdLanguage onClick={() => setMenu(!menu)} className="h-6 w-6 transition transform duration-500 ease-in-out hover:text-red-600 hover:scale-125 hover:shadow-lg" />
-
-                        {
-                            menu &&
-                            <div className=" absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                                <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-                                    {
-                                        langues.map((p, k) =>
-                                            <button key={k} className="flex justify-start items-center my-2 px-4 py-2 w-full text-md font-bold tracking-wider rounded-md hover:bg-gray-200 text-black" onClick={() => handleChange(p.lang)}>
-                                                <Flag country={p.country} className="mr-3" />
-                                                {p.name}
-                                            </button>
-                                        )
-                                    }
-                                </div>
-                            </div>
-                        }
+        <nav>
+            <div className="flex justify-between items-center py-1 px-3 sm:py-2 sm:px-5 md:py-3 md:px-7 lg:px-10">
+                <Link to="/" className="flex" onClick={() => setPageTitle("Company Overview")}>
+                    <img src={a9Logo} alt="A9 Logo" className="w-32 sm:w-36 md:w-44 lg:w-48 object-contain" />
+                </Link>
+                <div className="flex items-center">
+                    <div className="relative hidden lg:block">
+                        {/* language changer for desktop */}
+                        <MdLanguage className="text-primary-300 text-4xl mr-5 p-1 hover:bg-gray-200 rounded-full cursor-pointer" onClick={() => setLangDrawer(prev => !prev)} />
+                        {langDrawer && <div className="absolute p-5 bg-white border top-9 right-7 flex flex-col z-20 border-black rounded-xl">
+                            {langues.map((langu, k) => (
+                                <button key={k} className="flex w-32 p-2 hover:bg-gray-300 items-center" onClick={() => handleChange(langu.lang)}>
+                                    <Flag country={langu.country} className="mr-4 " />
+                                    {langu.name}
+                                </button>
+                            ))}
+                        </div>}
                     </div>
-                </nav >
-            </div >
-        </div >
+                    <span className="hidden sm:inline-block sm:text-lg md:text-xl lg:text-2xl text-primary-300">Follow Us:</span>
+                    <Link to=""><FaFacebookSquare className="text-3xl sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
+                    <Link to=""><FaInstagram className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
+                    <Link to=""><FaYoutube className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
+                </div>
+            </div>
+
+            {/* Desktop navbar */}
+            <div className="hidden lg:block">
+                <div className="bg-primary-300">
+                    <div className="container mx-auto flex">
+                        {links.map((link, k) => (
+                            <Link key={k} to={link.to} className={`relative flex-1 hover:bg-primary-200 active:bg-primary-400 ${location.pathname.includes(link.to) ? "bg-primary-400" : ""}`}>
+                                <div className="py-3 text-center text-white text-lg font-bold">
+                                    {t(link.name)}
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* Mobile navbar */}
+            <div className="block lg:hidden relative">
+                <div className="p-3 bg-primary-300 flex">
+                    {!drawer ? <>
+                        <GiHamburgerMenu className="text-3xl text-white cursor-pointer hover:text-gray-200" onClick={() => setDrawer(true)} />
+                    </> : <>
+                        <MdClose className="text-3xl text-white cursor-pointer hover:text-gray-200" onClick={() => setDrawer(false)} />
+                    </>}
+                    <h1 className="w-full text-center text-xl font-bold text-white">{t(pageTitle)}</h1>
+                    <div className="relative block lg:hidden">
+                        {/* language changer for mobile */}
+                        <MdLanguage className="text-white text-3xl hover:text-gray-200 rounded-full cursor-pointer" onClick={() => setLangDrawer(prev => !prev)} />
+                        {langDrawer && <div className="absolute p-3 bg-white border top-8 right-1 flex flex-col z-20 rounded-xl border-black">
+                            {langues.map((langu, k) => (
+                                <button key={k} className="flex w-32 p-2 hover:bg-gray-300 items-center" onClick={() => handleChange(langu.lang)}>
+                                    <Flag country={langu.country} className="mr-4 " />
+                                    {t(langu.name)}
+                                </button>
+                            ))}
+                        </div>}
+                    </div>
+                </div>
+                {drawer && <div className="absolute bg-primary-300 top-12 pt-2 w-full shadow-md z-10 rounded-b-xl">
+                    {links.map((link, k) => (
+                        <Link key={k} to={link.to} onClick={() => { setDrawer(false); setPageTitle(link.name) }} >
+                            <div className={`p-3 w-full text-lg text-white font-bold border-t hover:bg-primary-200 ${location.pathname.includes(link.to) ? "bg-primary-400" : ""}`}>
+                                {t(link.name)}
+                            </div>
+                        </Link>
+                    ))}
+                </div>}
+            </div>
+        </nav>
     )
 }
 
-export default MyNavbar;
+export default Navbar2

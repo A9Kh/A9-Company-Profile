@@ -1,7 +1,5 @@
-// import Navbar from "components/Navbar";
-import Navbar2 from "components/Navbar2";
-// import Footer from 'components/Footer';
-import Footer2 from 'components/Footer2';
+import Navbar from "components/Navbar";
+import Footer from 'components/Footer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -51,7 +49,7 @@ function App() {
   return (
     <Router>
       <div className={`flex flex-col min-h-screen overflow-hidden ${useKhmerFont ? "font-khmerFont" : "font-openSans"}`}>
-        < Navbar2 khmerFontActivitor={setUseKhmerFont} />
+        < Navbar khmerFontActivitor={setUseKhmerFont} />
 
         <Fragment>
           <ScrollToTop />
@@ -67,12 +65,12 @@ function App() {
             <Route exact path="/careers" component={CareersPage} />
             <Route exact path="/investorresources" component={InvestorResourcesPage} />
             <Route exact path="/contactus" component={ContactUsPage} />
-            <Route exact path="/job/:id" component={jobdescription} />
+            <Route exact path="/careers/job/:id" component={jobdescription} />
             <Route path='*' exact={true} component={ErrorPage} />
           </Switch>
         </Fragment>
 
-        <Footer2 />
+        <Footer />
       </div >
     </Router>
   );

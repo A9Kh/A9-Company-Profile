@@ -4,6 +4,7 @@ import zh_contactus from "./contactus/zh_contactus";
 import zh_whatwedo from "./whatwedo/zh_whatwedo";
 import zh_investorresources from "./investorresources/zh_investorresources";
 import zh_companyoverview from "./companyoverview/zh_companyoverview"
+import zh_jobdescription from "./jobdescription/zh_jobdescription";
 
 const zhHans_lang = {
     translation: {
@@ -13,6 +14,7 @@ const zhHans_lang = {
         ...zh_whatwedo,
         ...zh_investorresources,
         ...zh_companyoverview,
+        ...zh_jobdescription,
 
         // navbar
         "About Us": "关于我们",

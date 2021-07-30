@@ -4,6 +4,7 @@ import kh_contactus from "./contactus/kh_contactus";
 import kh_whatwedo from "./whatwedo/kh_whatwedo";
 import kh_investorresources from "./investorresources/kh_investorresources";
 import kh_companyoverview from "./companyoverview/kh_companyoverview"
+import kh_jobdescription from "./jobdescription/kh_jobdescription";
 
 const kh_lang = {
     translation: {
@@ -13,6 +14,7 @@ const kh_lang = {
         ...kh_whatwedo,
         ...kh_investorresources,
         ...kh_companyoverview,
+        ...kh_jobdescription,
 
         // navBar
         "About Us": "អំពី​ពួក​យើង",

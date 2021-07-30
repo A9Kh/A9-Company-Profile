@@ -8,10 +8,10 @@ const companyoverview = () => {
 
   return (
     <main className="container mx-auto max-w-7xl px-3 sm:px-5 lg:px-1">
-      <section className="mt-4 sm:mt-7 lg:mt-10 mb-12 sm:mb-16 lg:mb-20">
+      <section className="mt-4 sm:mt-7 lg:mt-10 mb-10 lg:mb-20">
         <Description />
       </section>
-      <section className="mb-12 sm:mb-16 lg:mb-20">
+      <section className="mb-10 lg:mb-20">
         <SuperCharge />
       </section>
       <section className="mb-10">

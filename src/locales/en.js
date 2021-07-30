@@ -4,6 +4,7 @@ import en_contactus from "./contactus/en_contactus";
 import en_whatwedo from "./whatwedo/en_whatwedo";
 import en_investorresources from "./investorresources/en_investorresources";
 import en_companyoverview from "./companyoverview/en_companyoverview"
+import en_jobdescription from "./jobdescription/en_jobdescription";
 
 console.log()
 
@@ -15,6 +16,7 @@ const en_lang = {
         ...en_contactus,
         ...en_investorresources,
         ...en_companyoverview,
+        ...en_jobdescription,
 
         // navbar
         "About Us": "About Us",

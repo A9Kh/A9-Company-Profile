@@ -14,7 +14,7 @@ const CareersPage = () => {
             <section className="mb-5">
                 <Cover img={careerCoverImg} title={t("label_job_opportunities")} />
             </section>
-            <section className="container mx-auto max-w-7xl mb-20">
+            <section className="container mx-auto max-w-7xl mb-10 lg:mb-20">
                 <Description />
             </section>
             <section className="container mx-auto max-w-7xl mb-10">

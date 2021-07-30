@@ -36,7 +36,7 @@ const Departments = () => {
             <h1 className="font-bold uppercase mb-1 sm:mb-3 lg:mb-5 text-lg sm:text-xl lg:text-2xl">{t("label_department")}</h1>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 lg:gap-10">
                 {dpm.map((d, k) => (
-                    <Link to={`/job/${k}`} key={k} className="flex transform transition duration-300 hover:scale-105">
+                    <Link to={`careers/job/${k}`} key={k} className="flex transform transition duration-300 hover:scale-105">
                         <div className="flex flex-col">
                             <img src={d.img} alt="" className="object-cover border border-black flex-1" />
                             <h4 className="uppercase font-bold text-base sm:text-lg lg:text-xl mt-2">{d.title}</h4>

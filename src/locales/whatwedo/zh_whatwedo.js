@@ -23,8 +23,8 @@ const zh_whatwedo = {
 
     // fast and free
     faf_p_1: "",
-    faf_p_1: "",
-    faf_p_1: "",
+    faf_p_2: "",
+    faf_p_3: "",
     // end fast and free
     // end duties card
 };
