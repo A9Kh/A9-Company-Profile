@@ -64,11 +64,12 @@ const Navbar2 = ({ khmerFontActivitor }) => {
     }, []);
 
     const handleChange = (value) => {
+        var s = true;
         if (value === "kh") {
-            var s = true;
+            s = true;
             khmerFontActivitor(s);
         } else {
-            var s = false;
+            s = false;
             khmerFontActivitor(s);
         }
         i18n.changeLanguage(value);
