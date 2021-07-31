@@ -20,7 +20,7 @@ const OnlineShop = () => {
                         {t("a9_online_shop_p_2")}
                     </p>
                 </article>
-                <button className="flex bg-primary-300 px-10 py-3 rounded-full items-center gap-5 text-white hover:bg-primary-200 self-center lg:self-start">{t("btn_visit_a9_shop")} <ImArrowRight /> </button>
+                <a href="https://www.a9kh.com/" target="_blank" className="flex bg-primary-300 px-10 py-3 rounded-full items-center gap-5 text-white hover:bg-primary-200 self-center lg:self-start">{t("btn_visit_a9_shop")} <ImArrowRight /> </a>
             </div>
         </div>
     )
