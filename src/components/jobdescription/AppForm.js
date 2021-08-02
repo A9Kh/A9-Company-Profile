@@ -69,7 +69,7 @@ const AppForm = () => {
                     </select>
                 </div>
                 <div className="flex flex-col mb-3 sm:mb-5">
-                    <label htmlFor="why" className="mb-1 md:mb-2 text-sm sm:text-base">{t("label_why_you_")}?</label>
+                    <label htmlFor="why" className="mb-1 md:mb-2 text-sm sm:text-base">{t("label_why_are_you")}?</label>
                     <textarea name="" id="why" rows="5" className="resize-none border border-black p-1 sm:p-2 rounded-lg outline-none" placeholder="Because..."></textarea>
                 </div>
                 <div className="flex flex-col mb-3 sm:mb-5">
