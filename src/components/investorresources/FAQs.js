@@ -28,7 +28,7 @@ const FAQs = () => {
         <div>
             <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-center">{t("label_investor_resources")}</h1>
             <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-center">{t("label_faqs")}</h1>
-            <div className="flex flex-col gap-2 mt-1 px-3 sm:mt-3 sm:px-5 lg:mt-5 lg:px-1">
+            <div className="flex flex-col gap-2 mt-1 px-3 sm:mt-3">
                 {questionState.map((question, k) => (
                     <div key={k} className="flex flex-col">
                         <div className={`p-5 bg-gray-100 flex justify-between text-sm sm:text-base ${question.show ? "bg-primary-300 text-white" : ""} cursor-pointer `} onClick={() => handleClick(k)}>

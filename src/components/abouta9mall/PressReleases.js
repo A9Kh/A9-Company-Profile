@@ -16,9 +16,9 @@ const PressReleases = () => {
 
     return (
         <div>
-            <h1 className="uppercase font-bold mb-1 sm:mb-3 lg:mb-5 text-lg sm:text-xl lg:text-2xl px-3 sm:px-5 lg:px-1">{t("label_press_releases")}</h1>
-            <h1 className="font-bold text-lg sm:text-xl lg:text-2xl mb-1 lg:mb-3 px-3 sm:px-5 lg:px-1">2020</h1>
-            <div className="grid lg:grid-cols-2 gap-4 sm:gap-7 lg:gap-10 px-3 sm:px-5 lg:px-1">
+            <h1 className="uppercase font-bold mb-1 sm:mb-3 lg:mb-5 text-lg sm:text-xl lg:text-2xl">{t("label_press_releases")}</h1>
+            <h1 className="font-bold text-lg sm:text-xl lg:text-2xl mb-1 lg:mb-3">2020</h1>
+            <div className="grid lg:grid-cols-2 gap-4 sm:gap-7 lg:gap-10">
                 {releases.map((rl, k) => (
                     <div key={k} className="p-5 border border-black flex flex-col">
                         <h1 className="mb-1 sm:mb-3 lg:mb-5" style={{ color: "#0EA5E9" }}>{rl.date}</h1>

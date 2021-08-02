@@ -13,7 +13,7 @@ const Corporate = () => {
     ]
 
     return (
-        <div className="mt-4 sm:mt-7 lg:mt-10 px-3 sm:px-5 lg:px-1">
+        <div>
             <h1 className="text-lg sm:text-xl lg:text-2xl text-center font-bold mb-1 sm:mb-3 lg:mb-5">{t("label_corporate_profile")}</h1>
             <article>
                 <p className="text-sm sm:text-base tracking-wide">
