@@ -11,6 +11,12 @@ const AboutA9Mall = () => {
                 <p className="text-sm lg:text-base tracking-wide">
                     {t("abouta9_p_1")}
                 </p>
+                <p className="text-sm lg:text-base tracking-wide my-2 sm:my-3 lg:my-5">
+                    {t("abouta9_p_2")}
+                </p>
+                <p className="text-sm lg:text-base tracking-wide">
+                    {t("abouta9_p_3")}
+                </p>
             </article>
             <div className="flex flex-wrap lg:flex-nowrap">
                 <div className="w-6/12 hidden lg:block">
@@ -25,7 +31,7 @@ const AboutA9Mall = () => {
                         <h1 className="mb-1 sm:mb-3 text-base sm:text-lg lg:text-xl font-bold">{t("label_a9_marketplace")}</h1>
                         <article>
                             <p className="text-sm sm:text-bace lg:text-lg tracking-wide">
-                                {t("abouta9_p_2")}
+                                {t("abouta9_p_4")}
                             </p>
                         </article>
                     </div>
