@@ -7,7 +7,7 @@ const companyoverview = () => {
   document.title = "A9 - Home";
 
   return (
-    <main className="container mx-auto max-w-7xl px-3 sm:px-5 lg:px-1">
+    <main className="container mx-auto max-w-7xl px-5 xl:px-0">
       <section className="mt-4 sm:mt-7 lg:mt-10 mb-10 lg:mb-20">
         <Description />
       </section>

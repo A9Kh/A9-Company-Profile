@@ -14,10 +14,10 @@ const InvestorPage = () => {
             <section>
                 <Cover img={investorImg} title={t("label_investor_overview")} />
             </section>
-            <section className="container mx-auto max-w-7xl mb-10 lg:mb-20">
+            <section className="container mx-auto max-w-7xl mb-10 lg:mb-20 mt-4 sm:mt-7 lg:mt-10 px-5 xl:px-0">
                 <Corporate />
             </section>
-            <section className="container mx-auto max-w-7xl mb-10">
+            <section className="container mx-auto max-w-7xl mb-10 px-5 xl:px-01">
                 <FAQs />
             </section>
         </main>

@@ -11,10 +11,10 @@ const AboutA9Page = () => {
             <section className="mt-4 sm:mt-7 lg:mt-10 mb-10 lg:mb-20">
                 <AboutA9 />
             </section>
-            <section className="mb-10 lg:mb-20">
+            <section className="mb-10 lg:mb-20 px-5 xl:px-0">
                 <PressReleases />
             </section>
-            <section className="mb-10">
+            <section className="mb-10 px-5 xl:px-0">
                 <CorePillars />
             </section>
         </main>

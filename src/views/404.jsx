@@ -8,7 +8,7 @@ const ErrorPage = () => {
     // const { t } = useTranslation();
 
     return (
-        <main className="container mx-auto max-w-7xl">
+        <main className="container mx-auto max-w-7xl px-5 xl:px-0">
             <section>
                 <Oops />
             </section>

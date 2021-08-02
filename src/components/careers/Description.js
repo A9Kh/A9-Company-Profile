@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 const Description = () => {
     const { t } = useTranslation();
     return (
-        <article className="px-3 sm:px-5 lg:px-1">
+        <article>
             <p className="mb-5 text-sm sm:text-base tracking-wide">
                 {t("careers_p_1")}
             </p>

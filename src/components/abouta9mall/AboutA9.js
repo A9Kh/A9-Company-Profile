@@ -6,10 +6,16 @@ const AboutA9Mall = () => {
 
     return (
         <div>
-            <h1 className="font-bold text-lg mb-1 sm:text-xl sm:mb-3 lg:text-2xl lg:mb-5 px-3 sm:px-5 lg:px-1">{t("label_about_a9_mall")}</h1>
-            <article className="mb-10 px-3 sm:px-5 lg:px-1">
+            <h1 className="font-bold text-lg mb-1 sm:text-xl sm:mb-3 lg:text-2xl lg:mb-5 px-5 xl:px-0">{t("label_about_a9_mall")}</h1>
+            <article className="mb-10 px-5 xl:px-0">
                 <p className="text-sm lg:text-base tracking-wide">
                     {t("abouta9_p_1")}
+                </p>
+                <p className="text-sm lg:text-base tracking-wide my-2 sm:my-3 lg:my-5">
+                    {t("abouta9_p_2")}
+                </p>
+                <p className="text-sm lg:text-base tracking-wide">
+                    {t("abouta9_p_3")}
                 </p>
             </article>
             <div className="flex flex-wrap lg:flex-nowrap">
@@ -25,7 +31,7 @@ const AboutA9Mall = () => {
                         <h1 className="mb-1 sm:mb-3 text-base sm:text-lg lg:text-xl font-bold">{t("label_a9_marketplace")}</h1>
                         <article>
                             <p className="text-sm sm:text-bace lg:text-lg tracking-wide">
-                                {t("abouta9_p_2")}
+                                {t("abouta9_p_4")}
                             </p>
                         </article>
                     </div>

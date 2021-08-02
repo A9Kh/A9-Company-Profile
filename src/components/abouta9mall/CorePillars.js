@@ -31,9 +31,9 @@ const CorePillars = () => {
     ]
 
     return (
-        <div className="px-3 sm:px-5 lg:px-1">
+        <div>
             <h1 className="uppercase mb-1 sm:mb-3 lg:mb-5 text:lg sm:text-xl lg:text-2xl font-bold">{t("label_our_core_pillars")}</h1>
-            <div className="grid md:grid-cols-3 px-1">
+            <div className="grid md:grid-cols-3">
                 {cores.map((core, k) => (
                     <div key={k} className={`p-4 lg:p-7 ${core.color}`} data-aos="fade-up" data-aos-delay={core.aosDelay} >
                         <div className="flex mb-1 md:mb-5 lg:mb-10">
