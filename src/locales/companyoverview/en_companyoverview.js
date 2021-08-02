@@ -1,7 +1,7 @@
 const en_companyoverview = {
     // description
     label_company_overview: "Company Overview",
-    companyoverview_p_1: "focuses on social e-commerce, while also offer product purchasing service from China such as Taobao, Tian Mao, Jin Dong and other shopping app platform, with years of experience in product trade both domestic and abroad, which allows us to fully understand the market demands of manufacturers and brand owners, committed to building brands for companies and businesses both domestic and abroad.",
+    companyoverview_p_1: " focuses on social e-commerce, while also offer product purchasing service from China such as Taobao, Tian Mao, Jin Dong and other shopping app platform, with years of experience in product trade both domestic and abroad, which allows us to fully understand the market demands of manufacturers and brand owners, committed to building brands for companies and businesses both domestic and abroad.",
     companyoverview_p_2: "A9 integrates high-quality supply chain resources, with the mission of \"determining production according to needs and rapid turnover\", using the Internet and big data technology to empower the supply side, strictly selected and high quality, cost-effective products, build a warehouse, logistic system, whole-process data monitoring for product and information distribution, enabling services for many and multiple types of enterprises in the food, clothing, electronics, and retail industries at home and abroad.",
     // end description
 
