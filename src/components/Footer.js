@@ -26,14 +26,14 @@ const Footer2 = () => {
                         </div>
                         <div className="flex-1 flex flex-col">
                             <Link to="/whatwedo" className="text-lg text-white font-bold hover:text-gray-200">{t("label_what_we_do")}</Link>
-                            <Link to="#" className="text-sm text-white mt-1 sm:mt-2 lg:mt-3 hover:text-gray-200">{t("label_a9_mall")}</Link>
-                            <Link to="#" className="text-sm text-white mt-1 sm:mt-2 lg:mt-3 hover:text-gray-200">{t("label_delivery_and_logistic")}</Link>
+                            <Link to="/whatwedo" className="text-sm text-white mt-1 sm:mt-2 lg:mt-3 hover:text-gray-200">{t("label_a9_mall")}</Link>
+                            <Link to="/whatwedo" className="text-sm text-white mt-1 sm:mt-2 lg:mt-3 hover:text-gray-200">{t("label_delivery_and_logistic")}</Link>
                         </div>
                     </div>
                     <div className="flex flex-col w-full sm:mt-7 lg:mt-0 lg:w-4/12">
                         <Link to="/contactus" className="text-lg text-white font-bold hover:text-gray-200">{t("label_contact_us")}</Link>
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaPhoneAlt className="inline-block text-xl -mt-1" />&emsp; 092 555 365 / 010 595 365</span>
-                        <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaGlobe className="inline-block text-xl -mt-1" />&emsp; a9@a9kh.com</span>
+                        <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaGlobe className="inline-block text-xl -mt-1" />&emsp; info@a9kh.com</span>
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><IoLocationSharp className="inline-block text-xl -mt-1" />&emsp; {t("address")}</span>
                         <div className="flex mt-1 sm:mt-2 lg:mt-3">
                             <FaFacebookSquare className="text-2xl text-white mr-5" />

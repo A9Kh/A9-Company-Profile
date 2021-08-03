@@ -10,9 +10,9 @@ const Description = () => {
             <p className="mb-5 text-sm sm:text-base tracking-wide">
                 {t("careers_p_2")}
             </p>
-            <p className="mb-5 text-sm sm:text-base tracking-wide">
+            {/* <p className="mb-5 text-sm sm:text-base tracking-wide">
                 {t("careers_p_3")}
-            </p>
+            </p> */}
             <h4>{t("label_interested")} <span className="font-bold">{t("label_come_build")}</span></h4>
         </article>
     )
