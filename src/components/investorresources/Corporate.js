@@ -14,13 +14,13 @@ const Corporate = () => {
 
     return (
         <div>
-            <h1 className="text-lg sm:text-xl lg:text-2xl text-center font-bold mb-1 sm:mb-3 lg:mb-5">{t("label_corporate_profile")}</h1>
+            {/* <h1 className="text-lg sm:text-xl lg:text-2xl text-center font-bold mb-1 sm:mb-3 lg:mb-5">{t("label_corporate_profile")}</h1>
             <article>
                 <p className="text-sm sm:text-base tracking-wide">
                     {t("investorresources_p")}
                     <span className="font-bold"> a9online.com</span>.
                 </p>
-            </article>
+            </article> */}
             <div className="mt-5 lg:mt-10 grid gap-5 lg:gap-0 lg:grid-cols-3">
                 {reasons.map((reason, k) => (
                     <div key={k} className={`flex flex-row lg:flex-col items-center ${reason.isRightSide ? "flex-row-reverse" : ""}`}>
