@@ -5,10 +5,10 @@ const en_abouta9 = {
     abouta9_p_2: "The company offers home appliances; mobile handsets and other digital products; desktop, laptop, and other computers, as well as printers and other office equipment; furniture and household goods; apparel; cosmetics, personal care items, and pet products; women's shoes, bags, jewelry, and luxury goods; men's shoes, sports gears, and fitness equipment; automobiles and accessories; maternal and childcare products, toys, and musical instruments; and food, beverage.",
     abouta9_p_3: "In addition, A9 offers an online marketplace for third-party merchants to sell products to customers; and transaction processing and billing, and other services.Further, it provides online marketing services for suppliers, third-party merchants, and other business partners; supply chain and logistics services for various industries; and consumer financing services to individual customers, as well as online-to-offline solutions.",
     label_our_business: "our business",
-    label_a9_marketplace: "A9 e-commerce platform",
+    label_a9_marketplace: "A9 Marketplace",
     abouta9_p_4: "A9 e-commerce platform starts with \"deepen service\" as the main purpose, provide product transactions for both individuals and cooperate uses in Southeast Asia, achieve shopping platform for e-commerce, working hard to provide users with rich, new, high-value daily necessities, electronic products, home appliances, agricultural products, etc. And to create a convenient, pleasant, and more value-added online shopping environment for users and more opportunities for wealth creation.",
-    a9_core_value: "A9 e-commerce Values (High quality and low price)",
-    abouta9_p_5: "A9 has a huge profession both domestic and international, professional at selecting staff, follows market research, data analysis and other methods, carefully select the best-selling products in both national and international, purchase directly from the manufacturer, reduce shipping cost, elimination of intermediary price difference, and at last all users in Southeast Asia can afford low price but high-quality products.",
+    // a9_core_value: "A9 e-commerce Values (High quality and low price)",
+    // abouta9_p_5: "A9 has a huge profession both domestic and international, professional at selecting staff, follows market research, data analysis and other methods, carefully select the best-selling products in both national and international, purchase directly from the manufacturer, reduce shipping cost, elimination of intermediary price difference, and at last all users in Southeast Asia can afford low price but high-quality products.",
     // end abouta9
 
     // press release

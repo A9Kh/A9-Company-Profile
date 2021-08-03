@@ -41,13 +41,13 @@ const AboutA9Mall = () => {
                             </p>
                         </article>
 
-                        <h1 className="my-2 sm:mb-3 text-base sm:text-lg lg:text-xl font-bold">{t("a9_core_value")}</h1>
+                        {/* <h1 className="my-2 sm:mb-3 text-base sm:text-lg lg:text-xl font-bold">{t("a9_core_value")}</h1>
 
                         <article>
                             <p className="text-sm sm:text-bace lg:text-lg tracking-wide">
                                 {t("abouta9_p_5")}
                             </p>
-                        </article>
+                        </article> */}
                     </div>
                 </div>
             </div>

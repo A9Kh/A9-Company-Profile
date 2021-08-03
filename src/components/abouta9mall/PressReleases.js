@@ -1,4 +1,4 @@
-import { CgChevronLeft, CgChevronRight } from "react-icons/cg";
+// import { CgChevronLeft, CgChevronRight } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 
@@ -27,13 +27,13 @@ const PressReleases = () => {
                     </div>
                 ))}
             </div>
-            <div className="flex items-center justify-center mt-1 sm:mt:3 lg:mt-5">
+            {/* <div className="flex items-center justify-center mt-1 sm:mt:3 lg:mt-5">
                 <CgChevronLeft className="text-5xl mr-8 sm:mr-14 lg:mr-20 p-3 rounded-full hover:bg-gray-200 cursor-pointer" />
                 <h1>
                     <span className="py-1 px-2 border border-black rounded-md">1</span> <span className="mx-3">of</span> <span>3</span>
                 </h1>
                 <CgChevronRight className="text-5xl ml-8 sm:ml-14 lg:ml-20 p-3 rounded-full hover:bg-gray-200 cursor-pointer" />
-            </div>
+            </div> */}
         </div>
     )
 }

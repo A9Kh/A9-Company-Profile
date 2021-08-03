@@ -47,6 +47,7 @@ const Navbar2 = ({ khmerFontActivitor }) => {
     }, [wrapperRef]);
 
     useEffect(() => {
+        console.log(location);
         if (location.pathname === "/") {
             setPageTitle("Company Overview");
         } else {
@@ -103,9 +104,9 @@ const Navbar2 = ({ khmerFontActivitor }) => {
                         </div>}
                     </div>
                     <span className="hidden sm:inline-block sm:text-lg md:text-xl lg:text-2xl text-primary-300">Follow Us:</span>
-                    <Link to=""><FaFacebookSquare className="text-3xl sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
-                    <Link to=""><FaInstagram className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
-                    <Link to=""><FaYoutube className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></Link>
+                    <a href="https://www.facebook.com/a9onlinekh" target="_blank" rel="noreferrer"><FaFacebookSquare className="text-3xl sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></a>
+                    <a href="https://www.instagram.com/a9onlinekh" target="_blank" rel="noreferrer"><FaInstagram className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></a>
+                    <a href="https://www.youtube.com/channel/UCUcgss8jEl9pT3lZ7xDe2Kw" target="_blank" rel="noreferrer"><FaYoutube className="text-3xl ml-2 sm:text-4xl sm:ml-3 md:ml-4 lg:ml-5 text-primary-300" /></a>
                 </div>
             </div>
 
