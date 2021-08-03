@@ -6,7 +6,7 @@ const en_abouta9 = {
     abouta9_p_3: "In addition, A9 offers an online marketplace for third-party merchants to sell products to customers; and transaction processing and billing, and other services.Further, it provides online marketing services for suppliers, third-party merchants, and other business partners; supply chain and logistics services for various industries; and consumer financing services to individual customers, as well as online-to-offline solutions.",
     label_our_business: "our business",
     label_a9_marketplace: "A9 Marketplace",
-    abouta9_p_4: "A9’s Marketplace gives retailers instant access to millions of new customers. Launched on the Lazada platform in 2019, A9 Marketplace provides a full suite of services, from secure payment options and customer care support,  to a wide distribution network and marketing analytics, aimed at enabling our sellers to sell more. A9 Marketplace merchants sell a wide range of products across 18 categories, including fast-growing offerings in health and beauty and fashion, as well as home & living, mother & baby, mobile devices and home appliances, among others.",
+    abouta9_p_2: "A9 e-commerce platform starts with deepen service as the main purpose, provide product transactions for both individuals and cooperate uses in Southeast Asia, achieve shopping platform for e-commerce, working hard to provide users with rich, new, high-value daily necessities, electronic products, home appliances, agricultural products, etc. And to create a convenient, pleasant, and more value-added online shopping environment for users and more opportunities for wealth creation.",
     // end abouta9
 
     // press release

@@ -10,7 +10,7 @@ const Description = () => {
                 {t("label_company_overview")}
             </h1>
             <div className="flex flex-col items-center lg:items-start lg:flex-row mt-5">
-                <img src={map_pic} alt="" className="object-cover w-10/12 sm:w-8/12 mb-5 lg:mt-0 lg:w-6/12 pr-10" />
+                <img src={map_pic} alt="" className="object-cover w-10/12 sm:w-8/12 mb-5 lg:mt-0 lg:w-6/12 lg:mr-10" />
                 <article className="lg:w-6/12 tracking-wide text-sm sm:text-base">
                     <p className="mb-5">
                         <span className="font-bold text-primary-300">A9 Online KH CO., LTD.</span>
