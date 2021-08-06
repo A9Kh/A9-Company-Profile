@@ -36,9 +36,9 @@ const Footer2 = () => {
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><FaGlobe className="inline-block text-xl -mt-1" />&emsp; info@a9kh.com</span>
                         <span className="text-sm text-white mt-1 sm:mt-2 lg:mt-3"><IoLocationSharp className="inline-block text-xl -mt-1" />&emsp; {t("address")}</span>
                         <div className="flex mt-1 sm:mt-2 lg:mt-3">
-                            <FaFacebookSquare className="text-2xl text-white mr-5" />
-                            <FaInstagram className="text-2xl text-white mr-5" />
-                            <FaYoutube className="text-2xl text-white" />
+                            <a href="https://www.facebook.com/a9onlinekh" target="_blank" rel="noreferrer"><FaFacebookSquare className="text-2xl text-white mr-5" /></a>
+                            <a href="https://www.instagram.com/a9onlinekh" target="_blank" rel="noreferrer"><FaInstagram className="text-2xl text-white mr-5" /></a>
+                            <a href="https://www.youtube.com/channel/UCUcgss8jEl9pT3lZ7xDe2Kw" target="_blank" rel="noreferrer"><FaYoutube className="text-2xl text-white" /></a>
                         </div>
                     </div>
                 </div>

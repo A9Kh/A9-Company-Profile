@@ -21,7 +21,7 @@ const en_investorresources = {
    label_investor_resources: "Investor Resourcse",
    label_faqs: "FAQs",
    question_1: "How long has A9 Mall been in business?",
-   answer_1: "Founder and CEO Ken opened the virtual doors of A9's online store in 2020. The company was incorporated in 2019 in Cambodia and reincorporated in 2021. The Company's principal corporate offices are located in Phnom Penh. A9 completed its initial public offering in May 2020.",
+   answer_1: "The company was incorporated in 2020 in Cambodia. The Company's principal corporate offices are located in Phnom Penh.",
    question_2: "How long has A9 Mall been in business?",
    answer_2: "Founder and CEO Ken opened the virtual doors of A9's online store in 2020. The company was incorporated in 2019 in Cambodia and reincorporated in 2021. The Company's principal corporate offices are located in Phnom Penh. A9 completed its initial public offering in May 2020.",
    question_3: "How long has A9 Mall been in business?",

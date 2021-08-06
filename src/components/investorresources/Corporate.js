@@ -45,7 +45,7 @@ const Corporate = () => {
                 {reasons.map((reason, k) => (
                     <div key={k} className={`flex flex-row lg:flex-col items-center ${reason.isRightSide ? "flex-row-reverse" : ""}`}>
                         <img src={reason.img} alt="" className="w-20 sm:w-28 lg:w-40 p-3 border border-primary-300 rounded-full" />
-                        <h1 className={`lg:text-center text-md sm:text-lg lg:text-xl font-bold px-2 sm:px-5 lg:mt-5 lg:px-16 ${reason.isRightSide ? "text-right" : ""}`}>{reason.text}</h1>
+                        {/* <h1 className={`lg:text-center text-md sm:text-lg lg:text-xl font-bold px-2 sm:px-5 lg:mt-5 lg:px-16 ${reason.isRightSide ? "text-right" : ""}`}>{reason.text}</h1> */}
                     </div>
                 ))}
             </div>

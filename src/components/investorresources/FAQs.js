@@ -8,9 +8,9 @@ const FAQs = () => {
 
     const questions = [
         { show: false, q: "question_1", a: "answer_1" },
-        { show: false, q: "question_2", a: "answer_2" },
-        { show: false, q: "question_3", a: "answer_3" },
-        { show: false, q: "question_4", a: "answer_4" },
+        // { show: false, q: "question_2", a: "answer_2" },
+        // { show: false, q: "question_3", a: "answer_3" },
+        // { show: false, q: "question_4", a: "answer_4" },
     ]
 
     useEffect(() => {

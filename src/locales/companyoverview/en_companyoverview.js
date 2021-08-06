@@ -10,10 +10,10 @@ const en_companyoverview = {
     supercharge_p_1: "With A9, any business can scale and become a super eBusiness. Let our digital capabilities enable your ambitions as you grow in the region. Find out more about how you can grow your business with A9.",
     country_1: "Cambodia",
     country_2: "Thailand",
-    country_3: "Thailand",
+    country_3: "Hong Kong",
     country_4: "China",
     country_5: "Singapore",
-    country_6: "Singapore",
+    country_6: "Taiwan",
     // end supercharge
 
     // express
